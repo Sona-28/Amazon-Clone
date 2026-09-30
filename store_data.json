@@ -1,0 +1,4968 @@
+[
+{
+  "model": "store.category",
+  "pk": 3,
+  "fields": {
+    "name": "Electronics",
+    "slug": "electronics",
+    "description": "",
+    "created_at": "2026-09-30T08:28:45.416Z"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 4,
+  "fields": {
+    "name": "Fashion",
+    "slug": "fashion",
+    "description": "",
+    "created_at": "2026-09-30T08:28:51.623Z"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 5,
+  "fields": {
+    "name": "Home & Living",
+    "slug": "home-living",
+    "description": "",
+    "created_at": "2026-09-30T08:28:57.987Z"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 6,
+  "fields": {
+    "name": "Beauty",
+    "slug": "beauty",
+    "description": "",
+    "created_at": "2026-09-30T08:29:03.751Z"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 7,
+  "fields": {
+    "name": "Books",
+    "slug": "books",
+    "description": "",
+    "created_at": "2026-09-30T08:56:57.201Z"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 9,
+  "fields": {
+    "name": "Grocery",
+    "slug": "grocery",
+    "description": "Food, beverages, and everyday grocery essentials",
+    "created_at": "2026-09-30T14:29:09.730Z"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 10,
+  "fields": {
+    "name": "Sports & Fitness",
+    "slug": "sports-fitness",
+    "description": "Sports equipment, fitness gear, and workout accessories",
+    "created_at": "2026-09-30T14:29:09.730Z"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 11,
+  "fields": {
+    "name": "Toys & Games",
+    "slug": "toys-games",
+    "description": "Toys, games, puzzles, and entertainment products",
+    "created_at": "2026-09-30T14:29:09.730Z"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 12,
+  "fields": {
+    "name": "Automotive",
+    "slug": "automotive",
+    "description": "Car, bike, and automotive accessories and products",
+    "created_at": "2026-09-30T14:29:09.730Z"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 13,
+  "fields": {
+    "name": "Health & Wellness",
+    "slug": "health-wellness",
+    "description": "Health, wellness, personal care, and fitness products",
+    "created_at": "2026-09-30T14:29:09.730Z"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 14,
+  "fields": {
+    "name": "Pet Supplies",
+    "slug": "pet-supplies",
+    "description": "Food, accessories, toys, and supplies for pets",
+    "created_at": "2026-09-30T14:29:09.730Z"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 15,
+  "fields": {
+    "name": "Baby & Kids",
+    "slug": "baby-kids",
+    "description": "Baby care, kids products, clothing, and accessories",
+    "created_at": "2026-09-30T14:29:09.730Z"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 16,
+  "fields": {
+    "name": "Jewellery",
+    "slug": "jewellery",
+    "description": "Jewellery, watches, and fashion accessories",
+    "created_at": "2026-09-30T14:29:09.730Z"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 17,
+  "fields": {
+    "name": "Shoes & Footwear",
+    "slug": "shoes-footwear",
+    "description": "Shoes, sandals, boots, and other footwear",
+    "created_at": "2026-09-30T14:29:09.730Z"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 18,
+  "fields": {
+    "name": "Luggage & Travel",
+    "slug": "luggage-travel",
+    "description": "Luggage, backpacks, travel accessories, and essentials",
+    "created_at": "2026-09-30T14:29:09.730Z"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 19,
+  "fields": {
+    "name": "Office Supplies",
+    "slug": "office-supplies",
+    "description": "Stationery, office equipment, and workplace essentials",
+    "created_at": "2026-09-30T14:29:09.730Z"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 20,
+  "fields": {
+    "name": "Garden & Outdoor",
+    "slug": "garden-outdoor",
+    "description": "Gardening tools, outdoor equipment, and accessories",
+    "created_at": "2026-09-30T14:29:09.730Z"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 21,
+  "fields": {
+    "name": "Musical Instruments",
+    "slug": "musical-instruments",
+    "description": "Musical instruments, equipment, and accessories",
+    "created_at": "2026-09-30T14:29:09.730Z"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 22,
+  "fields": {
+    "name": "Appliances",
+    "slug": "appliances",
+    "description": "Kitchen, household, and electrical appliances",
+    "created_at": "2026-09-30T14:29:09.730Z"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 23,
+  "fields": {
+    "name": "Arts & Crafts",
+    "slug": "arts-crafts",
+    "description": "Art materials, craft supplies, and creative hobby products",
+    "created_at": "2026-09-30T14:29:09.730Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 2,
+  "fields": {
+    "category": 6,
+    "name": "Foundation-30C",
+    "slug": "foundation-30c",
+    "description": "Product: Foundation\r\nShade: 30C",
+    "price": "15.99",
+    "image": "https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/products/pictures/item/free/original/000000000494396687/m_VvhXdzh-000000000494396687_1.jpg",
+    "created_at": "2026-09-30T08:37:52.198Z",
+    "stock": 3,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 3,
+  "fields": {
+    "category": 7,
+    "name": "The Fault in Our Stars",
+    "slug": "the-fault-in-our-stars",
+    "description": "Book: The Fault in Our Stars\r\nFormat: Paperback\r\nAuthor: John Green",
+    "price": "10.00",
+    "image": "",
+    "created_at": "2026-09-30T11:55:21.429Z",
+    "stock": 0,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 904,
+  "fields": {
+    "category": 3,
+    "name": "Wireless Bluetooth Headphones",
+    "slug": "wireless-bluetooth-headphones",
+    "description": "Over-ear wireless headphones with noise isolation and long battery life.",
+    "price": "2499.00",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 45,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 905,
+  "fields": {
+    "category": 3,
+    "name": "Smartphone 128GB",
+    "slug": "smartphone-128gb",
+    "description": "Modern smartphone with a high-resolution display, powerful processor, and 128GB storage.",
+    "price": "18999.00",
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 906,
+  "fields": {
+    "category": 3,
+    "name": "Wireless Mechanical Keyboard",
+    "slug": "wireless-mechanical-keyboard",
+    "description": "Compact mechanical keyboard with wireless connectivity and RGB backlighting.",
+    "price": "3499.00",
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 25,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 907,
+  "fields": {
+    "category": 3,
+    "name": "USB-C Fast Charger",
+    "slug": "usb-c-fast-charger",
+    "description": "Compact fast charger supporting USB-C devices and modern charging standards.",
+    "price": "1299.00",
+    "image": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 60,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 908,
+  "fields": {
+    "category": 3,
+    "name": "Smart Watch",
+    "slug": "smart-watch",
+    "description": "Fitness-focused smartwatch with activity tracking and notifications.",
+    "price": "4999.00",
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 909,
+  "fields": {
+    "category": 3,
+    "name": "Portable Bluetooth Speaker",
+    "slug": "portable-bluetooth-speaker",
+    "description": "Portable speaker with powerful audio and rechargeable battery.",
+    "price": "1999.00",
+    "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 40,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 910,
+  "fields": {
+    "category": 3,
+    "name": "1080p Webcam",
+    "slug": "1080p-webcam",
+    "description": "Full HD webcam suitable for video calls, online classes, and streaming.",
+    "price": "2299.00",
+    "image": "https://images.unsplash.com/photo-1587826080692-f439cd0b70da",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 28,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 911,
+  "fields": {
+    "category": 3,
+    "name": "Wireless Mouse",
+    "slug": "wireless-mouse",
+    "description": "Ergonomic wireless mouse with precise tracking and comfortable grip.",
+    "price": "899.00",
+    "image": "https://images.unsplash.com/photo-1527814050087-3793815479db",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 75,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 912,
+  "fields": {
+    "category": 3,
+    "name": "Power Bank 20000mAh",
+    "slug": "power-bank-20000mah",
+    "description": "High-capacity power bank with multiple charging ports.",
+    "price": "1799.00",
+    "image": "https://images.unsplash.com/photo-1609592424304-8b6d6c6a7d0b",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 50,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 913,
+  "fields": {
+    "category": 3,
+    "name": "Laptop Stand",
+    "slug": "laptop-stand",
+    "description": "Adjustable aluminum laptop stand designed for comfortable desk setups.",
+    "price": "1599.00",
+    "image": "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 32,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 914,
+  "fields": {
+    "category": 3,
+    "name": "Tablet 10 Inch",
+    "slug": "tablet-10-inch",
+    "description": "10-inch tablet suitable for entertainment, browsing, reading, and productivity.",
+    "price": "12999.00",
+    "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 20,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 915,
+  "fields": {
+    "category": 3,
+    "name": "Noise Cancelling Earbuds",
+    "slug": "noise-cancelling-earbuds",
+    "description": "True wireless earbuds with active noise cancellation and charging case.",
+    "price": "3999.00",
+    "image": "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 38,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 916,
+  "fields": {
+    "category": 3,
+    "name": "External SSD 1TB",
+    "slug": "external-ssd-1tb",
+    "description": "Fast portable 1TB SSD for backups and file transfers.",
+    "price": "6999.00",
+    "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 18,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 917,
+  "fields": {
+    "category": 3,
+    "name": "USB-C Hub",
+    "slug": "usb-c-hub",
+    "description": "Multi-port USB-C hub with HDMI, USB, and memory card connectivity.",
+    "price": "2199.00",
+    "image": "https://images.unsplash.com/photo-1625842268584-8f3296236761",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 44,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 918,
+  "fields": {
+    "category": 3,
+    "name": "Gaming Controller",
+    "slug": "gaming-controller",
+    "description": "Ergonomic wireless gaming controller compatible with modern gaming platforms.",
+    "price": "2999.00",
+    "image": "https://images.unsplash.com/photo-1592840496694-26c035b52b48",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 27,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 919,
+  "fields": {
+    "category": 4,
+    "name": "Classic Cotton T-Shirt",
+    "slug": "classic-cotton-tshirt",
+    "description": "Comfortable everyday cotton T-shirt with a classic fit.",
+    "price": "699.00",
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 100,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 920,
+  "fields": {
+    "category": 4,
+    "name": "Slim Fit Jeans",
+    "slug": "slim-fit-jeans",
+    "description": "Modern slim-fit denim jeans suitable for casual everyday wear.",
+    "price": "1799.00",
+    "image": "https://images.unsplash.com/photo-1542272604-787c3835535d",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 55,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 921,
+  "fields": {
+    "category": 4,
+    "name": "Casual Hoodie",
+    "slug": "casual-hoodie",
+    "description": "Soft fleece hoodie designed for comfortable casual wear.",
+    "price": "1499.00",
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 42,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 922,
+  "fields": {
+    "category": 4,
+    "name": "Formal Shirt",
+    "slug": "formal-shirt",
+    "description": "Classic formal shirt suitable for office wear and professional occasions.",
+    "price": "1299.00",
+    "image": "https://images.unsplash.com/photo-1603252110481-7ba873bf42ab",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 60,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 923,
+  "fields": {
+    "category": 4,
+    "name": "Summer Dress",
+    "slug": "summer-dress",
+    "description": "Lightweight casual dress designed for warm-weather comfort.",
+    "price": "1899.00",
+    "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 924,
+  "fields": {
+    "category": 4,
+    "name": "Denim Jacket",
+    "slug": "denim-jacket",
+    "description": "Classic denim jacket with a versatile casual design.",
+    "price": "2499.00",
+    "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 25,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 925,
+  "fields": {
+    "category": 4,
+    "name": "Cotton Kurta",
+    "slug": "cotton-kurta",
+    "description": "Comfortable cotton kurta suitable for casual and festive occasions.",
+    "price": "999.00",
+    "image": "https://images.unsplash.com/photo-1610030469983-98e550d6193c",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 48,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 926,
+  "fields": {
+    "category": 4,
+    "name": "Polo T-Shirt",
+    "slug": "polo-tshirt",
+    "description": "Classic polo T-shirt made from breathable cotton fabric.",
+    "price": "899.00",
+    "image": "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 70,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 927,
+  "fields": {
+    "category": 4,
+    "name": "Oversized T-Shirt",
+    "slug": "oversized-tshirt",
+    "description": "Relaxed-fit oversized T-shirt for modern casual styling.",
+    "price": "799.00",
+    "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 80,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 928,
+  "fields": {
+    "category": 4,
+    "name": "Women Blazer",
+    "slug": "women-blazer",
+    "description": "Tailored blazer suitable for professional and smart-casual outfits.",
+    "price": "2999.00",
+    "image": "https://images.unsplash.com/photo-1591369822096-ffd140ec948f",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 20,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 929,
+  "fields": {
+    "category": 4,
+    "name": "Linen Trousers",
+    "slug": "linen-trousers",
+    "description": "Lightweight linen trousers designed for comfortable summer wear.",
+    "price": "1599.00",
+    "image": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 930,
+  "fields": {
+    "category": 4,
+    "name": "Casual Shorts",
+    "slug": "casual-shorts",
+    "description": "Comfortable everyday shorts with an adjustable waistband.",
+    "price": "799.00",
+    "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 65,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 931,
+  "fields": {
+    "category": 4,
+    "name": "Wool Sweater",
+    "slug": "wool-sweater",
+    "description": "Warm knitted sweater suitable for cold weather.",
+    "price": "2199.00",
+    "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 28,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 932,
+  "fields": {
+    "category": 4,
+    "name": "Leather Belt",
+    "slug": "leather-belt",
+    "description": "Classic leather belt with a durable metal buckle.",
+    "price": "999.00",
+    "image": "https://images.unsplash.com/photo-1624222247344-550fb60583dc",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 45,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 933,
+  "fields": {
+    "category": 4,
+    "name": "Casual Shirt",
+    "slug": "casual-shirt",
+    "description": "Relaxed casual shirt suitable for everyday outfits.",
+    "price": "1199.00",
+    "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 50,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 934,
+  "fields": {
+    "category": 5,
+    "name": "Decorative Table Lamp",
+    "slug": "decorative-table-lamp",
+    "description": "Modern decorative table lamp for bedrooms, offices, and living spaces.",
+    "price": "1299.00",
+    "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 935,
+  "fields": {
+    "category": 5,
+    "name": "Cotton Bedsheet",
+    "slug": "cotton-bedsheet",
+    "description": "Soft cotton bedsheet with a comfortable breathable finish.",
+    "price": "999.00",
+    "image": "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 60,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 936,
+  "fields": {
+    "category": 5,
+    "name": "Ceramic Vase",
+    "slug": "ceramic-vase",
+    "description": "Minimal ceramic vase suitable for flowers and home decoration.",
+    "price": "699.00",
+    "image": "https://images.unsplash.com/photo-1578500494198-246f612d3b3d",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 40,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 937,
+  "fields": {
+    "category": 5,
+    "name": "Throw Pillow",
+    "slug": "throw-pillow",
+    "description": "Decorative soft throw pillow for sofas, chairs, and beds.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 75,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 938,
+  "fields": {
+    "category": 5,
+    "name": "Wall Clock",
+    "slug": "wall-clock",
+    "description": "Minimal wall clock with a clean modern design.",
+    "price": "899.00",
+    "image": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 32,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 939,
+  "fields": {
+    "category": 5,
+    "name": "Scented Candle",
+    "slug": "scented-candle",
+    "description": "Aromatic scented candle designed to create a relaxing atmosphere.",
+    "price": "399.00",
+    "image": "https://images.unsplash.com/photo-1603006905003-be475563bc59",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 90,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 940,
+  "fields": {
+    "category": 5,
+    "name": "Storage Basket",
+    "slug": "storage-basket",
+    "description": "Woven storage basket for organizing household items.",
+    "price": "599.00",
+    "image": "https://images.unsplash.com/photo-1595428774223-ef52624120d2",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 55,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 941,
+  "fields": {
+    "category": 5,
+    "name": "Floor Rug",
+    "slug": "floor-rug",
+    "description": "Soft decorative rug designed for living rooms and bedrooms.",
+    "price": "2499.00",
+    "image": "https://images.unsplash.com/photo-1600166898405-da9535204843",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 18,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 942,
+  "fields": {
+    "category": 5,
+    "name": "Wooden Coffee Table",
+    "slug": "wooden-coffee-table",
+    "description": "Modern wooden coffee table with a simple functional design.",
+    "price": "5999.00",
+    "image": "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 12,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 943,
+  "fields": {
+    "category": 5,
+    "name": "Decorative Mirror",
+    "slug": "decorative-mirror",
+    "description": "Elegant wall mirror suitable for bedrooms and living areas.",
+    "price": "1999.00",
+    "image": "https://images.unsplash.com/photo-1618220179428-22790b461013",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 22,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 944,
+  "fields": {
+    "category": 5,
+    "name": "Ceramic Dinner Set",
+    "slug": "ceramic-dinner-set",
+    "description": "Complete ceramic dinner set suitable for everyday dining.",
+    "price": "1799.00",
+    "image": "https://images.unsplash.com/photo-1603199506016-b9a594b593c0",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 945,
+  "fields": {
+    "category": 5,
+    "name": "Curtain Set",
+    "slug": "curtain-set",
+    "description": "Light-blocking curtain set for bedrooms and living rooms.",
+    "price": "1599.00",
+    "image": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 40,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 946,
+  "fields": {
+    "category": 5,
+    "name": "Plant Pot",
+    "slug": "plant-pot",
+    "description": "Modern indoor plant pot suitable for small and medium plants.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1485955900006-10f4d324d411",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 85,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 947,
+  "fields": {
+    "category": 5,
+    "name": "Cushion Cover Set",
+    "slug": "cushion-cover-set",
+    "description": "Decorative cushion covers designed to refresh home interiors.",
+    "price": "599.00",
+    "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 65,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 948,
+  "fields": {
+    "category": 5,
+    "name": "Wooden Bookshelf",
+    "slug": "wooden-bookshelf",
+    "description": "Multi-level wooden bookshelf for organizing books and decorations.",
+    "price": "4499.00",
+    "image": "https://images.unsplash.com/photo-1594620302200-9a762244a156",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 15,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 949,
+  "fields": {
+    "category": 6,
+    "name": "Hydrating Face Moisturizer",
+    "slug": "hydrating-face-moisturizer",
+    "description": "Lightweight moisturizer designed to hydrate and soften the skin.",
+    "price": "799.00",
+    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 80,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 950,
+  "fields": {
+    "category": 6,
+    "name": "Vitamin C Serum",
+    "slug": "vitamin-c-serum",
+    "description": "Facial serum formulated with vitamin C for a bright-looking complexion.",
+    "price": "999.00",
+    "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7ba",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 55,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 951,
+  "fields": {
+    "category": 6,
+    "name": "Gentle Face Cleanser",
+    "slug": "gentle-face-cleanser",
+    "description": "Gentle daily cleanser designed to remove dirt and excess oil.",
+    "price": "599.00",
+    "image": "https://images.unsplash.com/photo-1556229010-53e7fac5d1a1",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 75,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 952,
+  "fields": {
+    "category": 6,
+    "name": "Sunscreen SPF 50",
+    "slug": "sunscreen-spf-50",
+    "description": "Broad-spectrum SPF 50 sunscreen with lightweight everyday texture.",
+    "price": "699.00",
+    "image": "https://images.unsplash.com/photo-1556228578-8c89e6adf883",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 100,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 953,
+  "fields": {
+    "category": 6,
+    "name": "Lip Balm",
+    "slug": "lip-balm",
+    "description": "Moisturizing lip balm for daily lip care.",
+    "price": "249.00",
+    "image": "https://images.unsplash.com/photo-1586495777744-4413f21062fa",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 120,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 954,
+  "fields": {
+    "category": 6,
+    "name": "Shampoo",
+    "slug": "shampoo",
+    "description": "Everyday cleansing shampoo designed for healthy-looking hair.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 85,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 955,
+  "fields": {
+    "category": 6,
+    "name": "Conditioner",
+    "slug": "conditioner",
+    "description": "Moisturizing conditioner for smooth and manageable hair.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1527799820374-dcf8b3f9a2a5",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 70,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 956,
+  "fields": {
+    "category": 6,
+    "name": "Body Lotion",
+    "slug": "body-lotion",
+    "description": "Nourishing body lotion designed for long-lasting hydration.",
+    "price": "599.00",
+    "image": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 90,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 957,
+  "fields": {
+    "category": 6,
+    "name": "Face Mask",
+    "slug": "face-mask",
+    "description": "Refreshing facial mask for a simple at-home skincare routine.",
+    "price": "449.00",
+    "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 65,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 958,
+  "fields": {
+    "category": 6,
+    "name": "Makeup Brush Set",
+    "slug": "makeup-brush-set",
+    "description": "Complete makeup brush set for everyday application.",
+    "price": "899.00",
+    "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 45,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 959,
+  "fields": {
+    "category": 6,
+    "name": "Mascara",
+    "slug": "mascara",
+    "description": "Long-lasting mascara designed to define and enhance lashes.",
+    "price": "699.00",
+    "image": "https://images.unsplash.com/photo-1631214524020-7e18db9a8f7f",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 50,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 960,
+  "fields": {
+    "category": 6,
+    "name": "Perfume",
+    "slug": "perfume",
+    "description": "Elegant everyday fragrance with a fresh and sophisticated scent.",
+    "price": "1499.00",
+    "image": "https://images.unsplash.com/photo-1541643600914-78b084683601",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 961,
+  "fields": {
+    "category": 6,
+    "name": "Nail Polish Set",
+    "slug": "nail-polish-set",
+    "description": "Collection of vibrant nail polish shades for different occasions.",
+    "price": "599.00",
+    "image": "https://images.unsplash.com/photo-1604654894610-df63bc536371",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 60,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 962,
+  "fields": {
+    "category": 6,
+    "name": "Hair Serum",
+    "slug": "hair-serum",
+    "description": "Lightweight hair serum designed to improve shine and manageability.",
+    "price": "749.00",
+    "image": "https://images.unsplash.com/photo-1527799820374-dcf8b3f9a2a5",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 55,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 963,
+  "fields": {
+    "category": 6,
+    "name": "Beauty Gift Set",
+    "slug": "beauty-gift-set",
+    "description": "Curated beauty care set suitable for gifting and personal use.",
+    "price": "1999.00",
+    "image": "https://images.unsplash.com/photo-1596462502278-27bfdc403348",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 25,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 964,
+  "fields": {
+    "category": 7,
+    "name": "The Data Science Handbook",
+    "slug": "data-science-handbook",
+    "description": "Practical introduction to data science concepts and workflows.",
+    "price": "899.00",
+    "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 965,
+  "fields": {
+    "category": 7,
+    "name": "Python Programming Guide",
+    "slug": "python-programming-guide",
+    "description": "Comprehensive guide to learning Python programming.",
+    "price": "799.00",
+    "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 45,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 966,
+  "fields": {
+    "category": 7,
+    "name": "Machine Learning Fundamentals",
+    "slug": "machine-learning-fundamentals",
+    "description": "Introduction to machine learning algorithms and practical applications.",
+    "price": "1099.00",
+    "image": "https://images.unsplash.com/photo-1535378917042-10a22c95931a",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 967,
+  "fields": {
+    "category": 7,
+    "name": "Deep Learning with Python",
+    "slug": "deep-learning-with-python",
+    "description": "Practical guide to neural networks and deep learning with Python.",
+    "price": "1299.00",
+    "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 28,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 968,
+  "fields": {
+    "category": 7,
+    "name": "Database Systems",
+    "slug": "database-systems",
+    "description": "Introduction to relational databases, SQL, and database design.",
+    "price": "999.00",
+    "image": "https://images.unsplash.com/photo-1543002588-bfa74002ed7e",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 40,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 969,
+  "fields": {
+    "category": 7,
+    "name": "Web Development Essentials",
+    "slug": "web-development-essentials",
+    "description": "Practical introduction to modern web development technologies.",
+    "price": "899.00",
+    "image": "https://images.unsplash.com/photo-1532012197267-da84d127e765",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 32,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 970,
+  "fields": {
+    "category": 7,
+    "name": "Clean Code",
+    "slug": "clean-code",
+    "description": "Guide to writing readable, maintainable, and professional software.",
+    "price": "1199.00",
+    "image": "https://images.unsplash.com/photo-1516979187457-637abb4f9353",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 25,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 971,
+  "fields": {
+    "category": 7,
+    "name": "Artificial Intelligence Basics",
+    "slug": "artificial-intelligence-basics",
+    "description": "Accessible introduction to artificial intelligence and its applications.",
+    "price": "999.00",
+    "image": "https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 38,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 972,
+  "fields": {
+    "category": 7,
+    "name": "Statistics for Data Science",
+    "slug": "statistics-for-data-science",
+    "description": "Practical statistics concepts for data analysis and machine learning.",
+    "price": "1099.00",
+    "image": "https://images.unsplash.com/photo-1553484771-371a605b060b",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 27,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 973,
+  "fields": {
+    "category": 7,
+    "name": "Algorithms Explained",
+    "slug": "algorithms-explained",
+    "description": "Clear introduction to algorithms, data structures, and problem solving.",
+    "price": "899.00",
+    "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 50,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 974,
+  "fields": {
+    "category": 7,
+    "name": "Business Analytics",
+    "slug": "business-analytics",
+    "description": "Guide to using data and analytics for business decision making.",
+    "price": "949.00",
+    "image": "https://images.unsplash.com/photo-1553484771-371a605b060b",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 975,
+  "fields": {
+    "category": 7,
+    "name": "Natural Language Processing",
+    "slug": "natural-language-processing",
+    "description": "Introduction to NLP techniques, language models, and text analytics.",
+    "price": "1199.00",
+    "image": "https://images.unsplash.com/photo-1536240478700-b869070f9279",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 24,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 976,
+  "fields": {
+    "category": 7,
+    "name": "Cloud Computing Guide",
+    "slug": "cloud-computing-guide",
+    "description": "Practical introduction to cloud platforms, services, and architecture.",
+    "price": "999.00",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 977,
+  "fields": {
+    "category": 7,
+    "name": "Software Engineering",
+    "slug": "software-engineering",
+    "description": "Principles and practices for building reliable software systems.",
+    "price": "1099.00",
+    "image": "https://images.unsplash.com/photo-1495446815901-a7297e633e8d",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 42,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 978,
+  "fields": {
+    "category": 7,
+    "name": "Introduction to Cybersecurity",
+    "slug": "introduction-to-cybersecurity",
+    "description": "Fundamentals of cybersecurity, threats, security principles, and protection.",
+    "price": "899.00",
+    "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 33,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 979,
+  "fields": {
+    "category": 9,
+    "name": "Basmati Rice 5kg",
+    "slug": "basmati-rice-5kg",
+    "description": "Premium long-grain basmati rice for everyday cooking.",
+    "price": "699.00",
+    "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 80,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 980,
+  "fields": {
+    "category": 9,
+    "name": "Organic Wheat Flour 5kg",
+    "slug": "organic-wheat-flour-5kg",
+    "description": "Whole wheat flour suitable for rotis, breads, and baking.",
+    "price": "399.00",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 70,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 981,
+  "fields": {
+    "category": 9,
+    "name": "Green Tea 100 Bags",
+    "slug": "green-tea-100-bags",
+    "description": "Refreshing green tea packed in convenient individual tea bags.",
+    "price": "349.00",
+    "image": "https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 60,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 982,
+  "fields": {
+    "category": 9,
+    "name": "Instant Coffee 200g",
+    "slug": "instant-coffee-200g",
+    "description": "Rich instant coffee blend for convenient everyday brewing.",
+    "price": "449.00",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 75,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 983,
+  "fields": {
+    "category": 9,
+    "name": "Honey 500g",
+    "slug": "honey-500g",
+    "description": "Pure honey suitable for beverages, breakfast, and cooking.",
+    "price": "399.00",
+    "image": "https://images.unsplash.com/photo-1587049352846-4a222e784d38",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 55,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 984,
+  "fields": {
+    "category": 9,
+    "name": "Peanut Butter 500g",
+    "slug": "peanut-butter-500g",
+    "description": "Creamy peanut butter made for breakfast and snacks.",
+    "price": "349.00",
+    "image": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 65,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 985,
+  "fields": {
+    "category": 9,
+    "name": "Mixed Nuts 500g",
+    "slug": "mixed-nuts-500g",
+    "description": "Premium mix of nuts suitable for healthy snacking.",
+    "price": "599.00",
+    "image": "https://images.unsplash.com/photo-1599599810694-b5ac7e9c6c5c",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 40,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 986,
+  "fields": {
+    "category": 9,
+    "name": "Oats 1kg",
+    "slug": "oats-1kg",
+    "description": "Whole grain oats suitable for breakfast and baking.",
+    "price": "249.00",
+    "image": "https://images.unsplash.com/photo-1517686469429-8bdb88b9f907",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 90,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 987,
+  "fields": {
+    "category": 9,
+    "name": "Pasta 500g",
+    "slug": "pasta-500g",
+    "description": "Durum wheat pasta suitable for quick meals.",
+    "price": "149.00",
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 100,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 988,
+  "fields": {
+    "category": 9,
+    "name": "Tomato Ketchup",
+    "slug": "tomato-ketchup",
+    "description": "Classic tomato ketchup for snacks and meals.",
+    "price": "199.00",
+    "image": "https://images.unsplash.com/photo-1528750717929-32abb73d3bd9",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 85,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 989,
+  "fields": {
+    "category": 9,
+    "name": "Olive Oil 1L",
+    "slug": "olive-oil-1l",
+    "description": "Premium cooking olive oil suitable for salads and everyday cooking.",
+    "price": "799.00",
+    "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 45,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 990,
+  "fields": {
+    "category": 9,
+    "name": "Dark Chocolate",
+    "slug": "dark-chocolate",
+    "description": "Rich dark chocolate bar made with premium cocoa.",
+    "price": "199.00",
+    "image": "https://images.unsplash.com/photo-1548907040-4d42f8e5b6f6",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 70,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 991,
+  "fields": {
+    "category": 9,
+    "name": "Corn Flakes",
+    "slug": "corn-flakes",
+    "description": "Crispy breakfast cereal suitable for quick morning meals.",
+    "price": "299.00",
+    "image": "https://images.unsplash.com/photo-1528207776546-365bb710ee93",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 55,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 992,
+  "fields": {
+    "category": 9,
+    "name": "Baking Powder",
+    "slug": "baking-powder",
+    "description": "Reliable baking powder for cakes, breads, and pastries.",
+    "price": "99.00",
+    "image": "https://images.unsplash.com/photo-1556911220-bff31c812dba",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 120,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 993,
+  "fields": {
+    "category": 9,
+    "name": "Organic Jaggery",
+    "slug": "organic-jaggery",
+    "description": "Traditional unrefined sweetener suitable for cooking and beverages.",
+    "price": "249.00",
+    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 60,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 994,
+  "fields": {
+    "category": 10,
+    "name": "Yoga Mat",
+    "slug": "yoga-mat",
+    "description": "Non-slip exercise mat suitable for yoga, stretching, and workouts.",
+    "price": "799.00",
+    "image": "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 70,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 995,
+  "fields": {
+    "category": 10,
+    "name": "Adjustable Dumbbells",
+    "slug": "adjustable-dumbbells",
+    "description": "Adjustable dumbbell set suitable for strength training at home.",
+    "price": "2999.00",
+    "image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 25,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 996,
+  "fields": {
+    "category": 10,
+    "name": "Resistance Bands Set",
+    "slug": "resistance-bands-set",
+    "description": "Set of resistance bands for strength and mobility exercises.",
+    "price": "599.00",
+    "image": "https://images.unsplash.com/photo-1598289431512-b97b0917affc",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 60,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 997,
+  "fields": {
+    "category": 10,
+    "name": "Running Shoes",
+    "slug": "running-shoes",
+    "description": "Lightweight running shoes designed for everyday training.",
+    "price": "2499.00",
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 45,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 998,
+  "fields": {
+    "category": 10,
+    "name": "Sports Water Bottle",
+    "slug": "sports-water-bottle",
+    "description": "Durable reusable water bottle for workouts and outdoor activities.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 80,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 999,
+  "fields": {
+    "category": 10,
+    "name": "Skipping Rope",
+    "slug": "skipping-rope",
+    "description": "Adjustable skipping rope suitable for cardio workouts.",
+    "price": "299.00",
+    "image": "https://images.unsplash.com/photo-1598289431512-b97b0917affc",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 100,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1000,
+  "fields": {
+    "category": 10,
+    "name": "Gym Gloves",
+    "slug": "gym-gloves",
+    "description": "Training gloves with padded palms for comfortable weightlifting.",
+    "price": "599.00",
+    "image": "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 55,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1001,
+  "fields": {
+    "category": 10,
+    "name": "Fitness Tracker",
+    "slug": "fitness-tracker",
+    "description": "Wearable fitness tracker for steps, workouts, and activity monitoring.",
+    "price": "1999.00",
+    "image": "https://images.unsplash.com/photo-1576243345690-4e4b79b63288",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1002,
+  "fields": {
+    "category": 10,
+    "name": "Football",
+    "slug": "football",
+    "description": "Durable training football suitable for recreational and competitive play.",
+    "price": "899.00",
+    "image": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 40,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1003,
+  "fields": {
+    "category": 10,
+    "name": "Basketball",
+    "slug": "basketball",
+    "description": "Official-size basketball with durable outdoor construction.",
+    "price": "999.00",
+    "image": "https://images.unsplash.com/photo-1546519638-68e109498ffc",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1004,
+  "fields": {
+    "category": 10,
+    "name": "Tennis Racket",
+    "slug": "tennis-racket",
+    "description": "Lightweight tennis racket suitable for recreational players.",
+    "price": "1999.00",
+    "image": "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 22,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1005,
+  "fields": {
+    "category": 10,
+    "name": "Cricket Bat",
+    "slug": "cricket-bat",
+    "description": "English willow cricket bat designed for training and match play.",
+    "price": "3499.00",
+    "image": "https://images.unsplash.com/photo-1531415074968-036ba1b575da",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 18,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1006,
+  "fields": {
+    "category": 10,
+    "name": "Exercise Bench",
+    "slug": "exercise-bench",
+    "description": "Adjustable workout bench for strength training exercises.",
+    "price": "4999.00",
+    "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 12,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1007,
+  "fields": {
+    "category": 10,
+    "name": "Foam Roller",
+    "slug": "foam-roller",
+    "description": "High-density foam roller for muscle recovery and mobility.",
+    "price": "799.00",
+    "image": "https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 45,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1008,
+  "fields": {
+    "category": 10,
+    "name": "Kettlebell 12kg",
+    "slug": "kettlebell-12kg",
+    "description": "12kg cast iron kettlebell suitable for strength and conditioning workouts.",
+    "price": "1799.00",
+    "image": "https://images.unsplash.com/photo-1517963879433-6ad2b056d0c2",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 20,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1009,
+  "fields": {
+    "category": 11,
+    "name": "Building Blocks Set",
+    "slug": "building-blocks-set",
+    "description": "Creative building block set for developing problem-solving skills.",
+    "price": "899.00",
+    "image": "https://images.unsplash.com/photo-1587654780291-39c9404d746b",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 45,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1010,
+  "fields": {
+    "category": 11,
+    "name": "Jigsaw Puzzle 1000 Pieces",
+    "slug": "jigsaw-puzzle-1000",
+    "description": "1000-piece puzzle designed for family and adult entertainment.",
+    "price": "599.00",
+    "image": "https://images.unsplash.com/photo-1606503153255-59d8b8b8f4c0",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 50,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1011,
+  "fields": {
+    "category": 11,
+    "name": "Remote Control Car",
+    "slug": "remote-control-car",
+    "description": "Remote-controlled toy car with rechargeable battery.",
+    "price": "1499.00",
+    "image": "https://images.unsplash.com/photo-1594787318286-3d835c1d207f",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1012,
+  "fields": {
+    "category": 11,
+    "name": "Board Game Set",
+    "slug": "board-game-set",
+    "description": "Family-friendly board game for entertaining game nights.",
+    "price": "799.00",
+    "image": "https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1013,
+  "fields": {
+    "category": 11,
+    "name": "Plush Teddy Bear",
+    "slug": "plush-teddy-bear",
+    "description": "Soft plush teddy bear suitable for children and gifting.",
+    "price": "699.00",
+    "image": "https://images.unsplash.com/photo-1559454403-b8fb88521f11",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 60,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1014,
+  "fields": {
+    "category": 11,
+    "name": "Toy Kitchen Set",
+    "slug": "toy-kitchen-set",
+    "description": "Pretend-play kitchen set with colorful accessories.",
+    "price": "1299.00",
+    "image": "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 25,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1015,
+  "fields": {
+    "category": 11,
+    "name": "Art Kit for Kids",
+    "slug": "art-kit-for-kids",
+    "description": "Creative art kit containing drawing and coloring supplies.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 75,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1016,
+  "fields": {
+    "category": 11,
+    "name": "Toy Train Set",
+    "slug": "toy-train-set",
+    "description": "Classic toy train set designed for imaginative play.",
+    "price": "1599.00",
+    "image": "https://images.unsplash.com/photo-1516627145497-ae6968895b74",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 20,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1017,
+  "fields": {
+    "category": 11,
+    "name": "Science Experiment Kit",
+    "slug": "science-experiment-kit",
+    "description": "Educational science kit featuring safe experiments for children.",
+    "price": "999.00",
+    "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1018,
+  "fields": {
+    "category": 11,
+    "name": "RC Helicopter",
+    "slug": "rc-helicopter",
+    "description": "Remote-controlled mini helicopter designed for indoor flying.",
+    "price": "1999.00",
+    "image": "https://images.unsplash.com/photo-1473968512647-3e447244af8f",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 15,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1019,
+  "fields": {
+    "category": 11,
+    "name": "Card Game",
+    "slug": "card-game",
+    "description": "Fast-paced card game suitable for family and friends.",
+    "price": "299.00",
+    "image": "https://images.unsplash.com/photo-1606503153255-59d8b8b8f4c0",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 80,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1020,
+  "fields": {
+    "category": 11,
+    "name": "Wooden Chess Set",
+    "slug": "wooden-chess-set",
+    "description": "Classic wooden chess set for strategy and board game enthusiasts.",
+    "price": "899.00",
+    "image": "https://images.unsplash.com/photo-1586165368502-1bad197a6461",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 40,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1021,
+  "fields": {
+    "category": 11,
+    "name": "Toy Doctor Set",
+    "slug": "toy-doctor-set",
+    "description": "Pretend-play doctor set with child-friendly accessories.",
+    "price": "699.00",
+    "image": "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1022,
+  "fields": {
+    "category": 11,
+    "name": "Musical Toy Keyboard",
+    "slug": "musical-toy-keyboard",
+    "description": "Colorful toy keyboard designed for musical exploration.",
+    "price": "899.00",
+    "image": "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 25,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1023,
+  "fields": {
+    "category": 11,
+    "name": "Remote Control Robot",
+    "slug": "remote-control-robot",
+    "description": "Interactive remote-controlled robot with multiple movement modes.",
+    "price": "1799.00",
+    "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 18,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1024,
+  "fields": {
+    "category": 12,
+    "name": "Car Phone Holder",
+    "slug": "car-phone-holder",
+    "description": "Dashboard-mounted phone holder for convenient navigation.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1493238792000-8113da705763",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 70,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1025,
+  "fields": {
+    "category": 12,
+    "name": "Car Cleaning Kit",
+    "slug": "car-cleaning-kit",
+    "description": "Complete cleaning kit for maintaining vehicle interiors and exteriors.",
+    "price": "899.00",
+    "image": "https://images.unsplash.com/photo-1607860108855-64acf2078ed9",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 45,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1026,
+  "fields": {
+    "category": 12,
+    "name": "Car Air Freshener",
+    "slug": "car-air-freshener",
+    "description": "Long-lasting car air freshener with a clean refreshing fragrance.",
+    "price": "199.00",
+    "image": "https://images.unsplash.com/photo-1502877338535-766e1452684a",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 100,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1027,
+  "fields": {
+    "category": 12,
+    "name": "LED Headlight Bulbs",
+    "slug": "led-headlight-bulbs",
+    "description": "Bright LED replacement bulbs designed for improved road visibility.",
+    "price": "1299.00",
+    "image": "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1028,
+  "fields": {
+    "category": 12,
+    "name": "Car Seat Cover Set",
+    "slug": "car-seat-cover-set",
+    "description": "Universal car seat cover set with durable and comfortable fabric.",
+    "price": "1999.00",
+    "image": "https://images.unsplash.com/photo-1542362567-b07e54358753",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 20,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1029,
+  "fields": {
+    "category": 12,
+    "name": "Portable Tyre Inflator",
+    "slug": "portable-tyre-inflator",
+    "description": "Compact electric tyre inflator with digital pressure display.",
+    "price": "1799.00",
+    "image": "https://images.unsplash.com/photo-1486006920555-c77dcf18193c",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 28,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1030,
+  "fields": {
+    "category": 12,
+    "name": "Car Emergency Kit",
+    "slug": "car-emergency-kit",
+    "description": "Essential emergency tools and supplies for roadside situations.",
+    "price": "1499.00",
+    "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1031,
+  "fields": {
+    "category": 12,
+    "name": "Microfiber Car Towels",
+    "slug": "microfiber-car-towels",
+    "description": "Pack of soft microfiber towels for vehicle cleaning.",
+    "price": "399.00",
+    "image": "https://images.unsplash.com/photo-1607860108855-64acf2078ed9",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 90,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1032,
+  "fields": {
+    "category": 12,
+    "name": "Car Vacuum Cleaner",
+    "slug": "car-vacuum-cleaner",
+    "description": "Compact vacuum cleaner designed for cleaning vehicle interiors.",
+    "price": "1599.00",
+    "image": "https://images.unsplash.com/photo-1558317374-067fb5f30001",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 25,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1033,
+  "fields": {
+    "category": 12,
+    "name": "Motorcycle Cover",
+    "slug": "motorcycle-cover",
+    "description": "Weather-resistant motorcycle cover for outdoor protection.",
+    "price": "799.00",
+    "image": "https://images.unsplash.com/photo-1558981806-ec527fa84c39",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 40,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1034,
+  "fields": {
+    "category": 12,
+    "name": "Bike Chain Lubricant",
+    "slug": "bike-chain-lubricant",
+    "description": "High-performance lubricant for smooth motorcycle chain operation.",
+    "price": "349.00",
+    "image": "https://images.unsplash.com/photo-1558980394-0c0c0e5c5a8f",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 55,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1035,
+  "fields": {
+    "category": 12,
+    "name": "Car Dash Camera",
+    "slug": "car-dash-camera",
+    "description": "Compact dash camera for recording journeys and road activity.",
+    "price": "2999.00",
+    "image": "https://images.unsplash.com/photo-1493238792000-8113da705763",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 18,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1036,
+  "fields": {
+    "category": 12,
+    "name": "Steering Wheel Cover",
+    "slug": "steering-wheel-cover",
+    "description": "Comfortable steering wheel cover with improved grip.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 60,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1037,
+  "fields": {
+    "category": 12,
+    "name": "Car Sunshade",
+    "slug": "car-sunshade",
+    "description": "Foldable windshield sunshade designed to reduce interior heat.",
+    "price": "599.00",
+    "image": "https://images.unsplash.com/photo-1504215680853-026ed2a45def",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 50,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1038,
+  "fields": {
+    "category": 12,
+    "name": "Motorcycle Phone Mount",
+    "slug": "motorcycle-phone-mount",
+    "description": "Secure handlebar phone mount for navigation while riding.",
+    "price": "699.00",
+    "image": "https://images.unsplash.com/photo-1558980394-0c0c0e5c5a8f",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 45,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1039,
+  "fields": {
+    "category": 13,
+    "name": "Digital Thermometer",
+    "slug": "digital-thermometer",
+    "description": "Fast digital thermometer for convenient temperature measurement.",
+    "price": "299.00",
+    "image": "https://images.unsplash.com/photo-1584362917165-526a968579e8",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 75,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1040,
+  "fields": {
+    "category": 13,
+    "name": "Aromatherapy Diffuser",
+    "slug": "aromatherapy-diffuser",
+    "description": "Ultrasonic diffuser designed for relaxing aromatherapy sessions.",
+    "price": "1299.00",
+    "image": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1041,
+  "fields": {
+    "category": 13,
+    "name": "Sleep Mask",
+    "slug": "sleep-mask",
+    "description": "Soft comfortable sleep mask designed to block unwanted light.",
+    "price": "299.00",
+    "image": "https://images.unsplash.com/photo-1511295742362-92c96b1cf484",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 80,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1042,
+  "fields": {
+    "category": 13,
+    "name": "Wellness Foam Roller",
+    "slug": "wellness-foam-roller",
+    "description": "Recovery foam roller for stretching and muscle relaxation.",
+    "price": "799.00",
+    "image": "https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 40,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1043,
+  "fields": {
+    "category": 13,
+    "name": "Massage Ball",
+    "slug": "massage-ball",
+    "description": "Compact massage ball for targeted muscle recovery.",
+    "price": "399.00",
+    "image": "https://images.unsplash.com/photo-1599447421416-3414500d18a5",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 65,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1044,
+  "fields": {
+    "category": 13,
+    "name": "Meditation Cushion",
+    "slug": "meditation-cushion",
+    "description": "Comfortable cushion designed for meditation and relaxation.",
+    "price": "899.00",
+    "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1045,
+  "fields": {
+    "category": 13,
+    "name": "Wellness Water Bottle",
+    "slug": "wellness-water-bottle",
+    "description": "Reusable insulated bottle for keeping drinks at a comfortable temperature.",
+    "price": "799.00",
+    "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 70,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1046,
+  "fields": {
+    "category": 13,
+    "name": "Posture Corrector",
+    "slug": "posture-corrector",
+    "description": "Adjustable wearable support designed to encourage better posture.",
+    "price": "699.00",
+    "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 45,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1047,
+  "fields": {
+    "category": 13,
+    "name": "Heating Pad",
+    "slug": "heating-pad",
+    "description": "Reusable electric heating pad for comfortable heat therapy.",
+    "price": "999.00",
+    "image": "https://images.unsplash.com/photo-1600334129128-685c5582fd35",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1048,
+  "fields": {
+    "category": 13,
+    "name": "Digital Weighing Scale",
+    "slug": "digital-weighing-scale",
+    "description": "Digital personal weighing scale with easy-to-read display.",
+    "price": "999.00",
+    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 40,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1049,
+  "fields": {
+    "category": 13,
+    "name": "Eye Pillow",
+    "slug": "eye-pillow",
+    "description": "Soft relaxation eye pillow suitable for meditation and rest.",
+    "price": "399.00",
+    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 55,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1050,
+  "fields": {
+    "category": 13,
+    "name": "Resistance Exercise Kit",
+    "slug": "resistance-exercise-kit",
+    "description": "Compact resistance training kit for home workouts.",
+    "price": "799.00",
+    "image": "https://images.unsplash.com/photo-1598289431512-b97b0917affc",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 45,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1051,
+  "fields": {
+    "category": 13,
+    "name": "Sleep Sound Machine",
+    "slug": "sleep-sound-machine",
+    "description": "Compact sound machine with calming ambient sounds.",
+    "price": "1499.00",
+    "image": "https://images.unsplash.com/photo-1511295742362-92c96b1cf484",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 20,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1052,
+  "fields": {
+    "category": 13,
+    "name": "Wellness Journal",
+    "slug": "wellness-journal",
+    "description": "Guided journal for tracking habits, reflections, and daily routines.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 60,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1053,
+  "fields": {
+    "category": 13,
+    "name": "Relaxation Tea Set",
+    "slug": "relaxation-tea-set",
+    "description": "Curated tea set designed for relaxing evening routines.",
+    "price": "699.00",
+    "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1054,
+  "fields": {
+    "category": 14,
+    "name": "Premium Dog Food",
+    "slug": "premium-dog-food",
+    "description": "Balanced dry dog food suitable for everyday feeding.",
+    "price": "1299.00",
+    "image": "https://images.unsplash.com/photo-1589924691995-400dc9ecc119",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 50,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1055,
+  "fields": {
+    "category": 14,
+    "name": "Cat Food 2kg",
+    "slug": "cat-food-2kg",
+    "description": "Complete dry cat food formulated for everyday nutrition.",
+    "price": "999.00",
+    "image": "https://images.unsplash.com/photo-1519052537078-e6302a4968d4",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 45,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1056,
+  "fields": {
+    "category": 14,
+    "name": "Pet Feeding Bowl",
+    "slug": "pet-feeding-bowl",
+    "description": "Durable stainless steel feeding bowl for dogs and cats.",
+    "price": "399.00",
+    "image": "https://images.unsplash.com/photo-1589924691995-400dc9ecc119",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 80,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1057,
+  "fields": {
+    "category": 14,
+    "name": "Dog Collar",
+    "slug": "dog-collar",
+    "description": "Adjustable durable collar suitable for everyday walks.",
+    "price": "349.00",
+    "image": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 65,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1058,
+  "fields": {
+    "category": 14,
+    "name": "Retractable Dog Leash",
+    "slug": "retractable-dog-leash",
+    "description": "Adjustable retractable leash for comfortable outdoor walks.",
+    "price": "699.00",
+    "image": "https://images.unsplash.com/photo-1558788353-f76d92427f16",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 45,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1059,
+  "fields": {
+    "category": 14,
+    "name": "Cat Scratching Post",
+    "slug": "cat-scratching-post",
+    "description": "Durable scratching post designed for indoor cats.",
+    "price": "1299.00",
+    "image": "https://images.unsplash.com/photo-1545249390-6bdfa286032f",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 25,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1060,
+  "fields": {
+    "category": 14,
+    "name": "Pet Grooming Brush",
+    "slug": "pet-grooming-brush",
+    "description": "Soft grooming brush for removing loose fur.",
+    "price": "399.00",
+    "image": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 55,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1061,
+  "fields": {
+    "category": 14,
+    "name": "Interactive Pet Toy",
+    "slug": "interactive-pet-toy",
+    "description": "Interactive toy designed to keep pets engaged and entertained.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1535294435445-d7249524ef2e",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 60,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1062,
+  "fields": {
+    "category": 14,
+    "name": "Dog Bed",
+    "slug": "dog-bed",
+    "description": "Soft comfortable bed suitable for small and medium dogs.",
+    "price": "1799.00",
+    "image": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 20,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1063,
+  "fields": {
+    "category": 14,
+    "name": "Cat Litter 10kg",
+    "slug": "cat-litter-10kg",
+    "description": "Absorbent cat litter designed for odor control.",
+    "price": "899.00",
+    "image": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 40,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1064,
+  "fields": {
+    "category": 14,
+    "name": "Pet Shampoo",
+    "slug": "pet-shampoo",
+    "description": "Gentle pet shampoo for regular bathing and coat care.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 70,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1065,
+  "fields": {
+    "category": 14,
+    "name": "Dog Chew Toy",
+    "slug": "dog-chew-toy",
+    "description": "Durable chew toy designed for active dogs.",
+    "price": "299.00",
+    "image": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 85,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1066,
+  "fields": {
+    "category": 14,
+    "name": "Pet Travel Carrier",
+    "slug": "pet-travel-carrier",
+    "description": "Ventilated carrier suitable for transporting small pets.",
+    "price": "1999.00",
+    "image": "https://images.unsplash.com/photo-1601758228041-f3b2795255f1",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 18,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1067,
+  "fields": {
+    "category": 14,
+    "name": "Pet Training Pads",
+    "slug": "pet-training-pads",
+    "description": "Absorbent training pads designed for indoor pet training.",
+    "price": "599.00",
+    "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 50,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1068,
+  "fields": {
+    "category": 14,
+    "name": "Pet Water Fountain",
+    "slug": "pet-water-fountain",
+    "description": "Automatic water fountain providing fresh flowing water for pets.",
+    "price": "1599.00",
+    "image": "https://images.unsplash.com/photo-1574158622682-e40e69881006",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 22,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1069,
+  "fields": {
+    "category": 15,
+    "name": "Baby Cotton Bodysuit",
+    "slug": "baby-cotton-bodysuit",
+    "description": "Soft cotton bodysuit designed for everyday baby comfort.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1519689680058-324335c77eba",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 60,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1070,
+  "fields": {
+    "category": 15,
+    "name": "Baby Feeding Bottle",
+    "slug": "baby-feeding-bottle",
+    "description": "Ergonomic feeding bottle designed for comfortable feeding.",
+    "price": "399.00",
+    "image": "https://images.unsplash.com/photo-1584839404042-8bc6e2c7f8f1",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 70,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1071,
+  "fields": {
+    "category": 15,
+    "name": "Baby Blanket",
+    "slug": "baby-blanket",
+    "description": "Soft lightweight blanket suitable for babies and toddlers.",
+    "price": "799.00",
+    "image": "https://images.unsplash.com/photo-1519689680058-324335c77eba",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 40,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1072,
+  "fields": {
+    "category": 15,
+    "name": "Baby Bath Towel",
+    "slug": "baby-bath-towel",
+    "description": "Soft absorbent towel designed for delicate baby skin.",
+    "price": "599.00",
+    "image": "https://images.unsplash.com/photo-1544126592-807daa215a6b",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 55,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1073,
+  "fields": {
+    "category": 15,
+    "name": "Baby Diaper Bag",
+    "slug": "baby-diaper-bag",
+    "description": "Spacious multi-compartment bag for organizing baby essentials.",
+    "price": "1499.00",
+    "image": "https://images.unsplash.com/photo-1544126592-807daa215a6b",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1074,
+  "fields": {
+    "category": 15,
+    "name": "Kids Backpack",
+    "slug": "kids-backpack",
+    "description": "Lightweight colorful backpack suitable for school and outings.",
+    "price": "899.00",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 45,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1075,
+  "fields": {
+    "category": 15,
+    "name": "Kids Lunch Box",
+    "slug": "kids-lunch-box",
+    "description": "Durable lunch box with compartments for school meals.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 65,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1076,
+  "fields": {
+    "category": 15,
+    "name": "Baby Bib Set",
+    "slug": "baby-bib-set",
+    "description": "Set of soft washable bibs for everyday feeding.",
+    "price": "299.00",
+    "image": "https://images.unsplash.com/photo-1519689680058-324335c77eba",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 90,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1077,
+  "fields": {
+    "category": 15,
+    "name": "Kids Raincoat",
+    "slug": "kids-raincoat",
+    "description": "Lightweight waterproof raincoat designed for children.",
+    "price": "799.00",
+    "image": "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1078,
+  "fields": {
+    "category": 15,
+    "name": "Kids Sunglasses",
+    "slug": "kids-sunglasses",
+    "description": "Comfortable lightweight sunglasses designed for children.",
+    "price": "399.00",
+    "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 50,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1079,
+  "fields": {
+    "category": 15,
+    "name": "Baby Bath Set",
+    "slug": "baby-bath-set",
+    "description": "Gentle baby bath accessories for everyday care.",
+    "price": "699.00",
+    "image": "https://images.unsplash.com/photo-1544126592-807daa215a6b",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1080,
+  "fields": {
+    "category": 15,
+    "name": "Kids Water Bottle",
+    "slug": "kids-water-bottle",
+    "description": "Reusable lightweight water bottle designed for children.",
+    "price": "399.00",
+    "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 70,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1081,
+  "fields": {
+    "category": 15,
+    "name": "Baby Rattle Set",
+    "slug": "baby-rattle-set",
+    "description": "Colorful sensory rattles designed for early-stage play.",
+    "price": "349.00",
+    "image": "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 60,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1082,
+  "fields": {
+    "category": 15,
+    "name": "Kids Rain Boots",
+    "slug": "kids-rain-boots",
+    "description": "Water-resistant boots designed for rainy-day outdoor play.",
+    "price": "899.00",
+    "image": "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1083,
+  "fields": {
+    "category": 15,
+    "name": "Baby Sleeping Bag",
+    "slug": "baby-sleeping-bag",
+    "description": "Soft wearable sleeping bag designed for comfortable sleep.",
+    "price": "999.00",
+    "image": "https://images.unsplash.com/photo-1519689680058-324335c77eba",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 25,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1084,
+  "fields": {
+    "category": 16,
+    "name": "Gold Plated Necklace",
+    "slug": "gold-plated-necklace",
+    "description": "Elegant gold-plated necklace suitable for everyday styling.",
+    "price": "1299.00",
+    "image": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 25,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1085,
+  "fields": {
+    "category": 16,
+    "name": "Silver Earrings",
+    "slug": "silver-earrings",
+    "description": "Minimal silver earrings suitable for everyday wear.",
+    "price": "899.00",
+    "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1086,
+  "fields": {
+    "category": 16,
+    "name": "Pearl Bracelet",
+    "slug": "pearl-bracelet",
+    "description": "Elegant pearl bracelet suitable for casual and formal occasions.",
+    "price": "1499.00",
+    "image": "https://images.unsplash.com/photo-1611652022419-a9419f74343d",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 20,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1087,
+  "fields": {
+    "category": 16,
+    "name": "Classic Wrist Watch",
+    "slug": "classic-wrist-watch",
+    "description": "Classic analog wrist watch with a clean timeless design.",
+    "price": "2499.00",
+    "image": "https://images.unsplash.com/photo-1524805444758-089113d48a6d",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1088,
+  "fields": {
+    "category": 16,
+    "name": "Charm Bracelet",
+    "slug": "charm-bracelet",
+    "description": "Decorative charm bracelet suitable for gifting.",
+    "price": "999.00",
+    "image": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 28,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1089,
+  "fields": {
+    "category": 16,
+    "name": "Statement Ring",
+    "slug": "statement-ring",
+    "description": "Bold statement ring designed for modern outfits.",
+    "price": "799.00",
+    "image": "https://images.unsplash.com/photo-1605100804763-247f67b3557e",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 40,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1090,
+  "fields": {
+    "category": 16,
+    "name": "Minimal Pendant",
+    "slug": "minimal-pendant",
+    "description": "Simple pendant necklace for everyday styling.",
+    "price": "699.00",
+    "image": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 50,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1091,
+  "fields": {
+    "category": 16,
+    "name": "Hoop Earrings",
+    "slug": "hoop-earrings",
+    "description": "Classic hoop earrings with a polished finish.",
+    "price": "599.00",
+    "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 45,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1092,
+  "fields": {
+    "category": 16,
+    "name": "Leather Watch",
+    "slug": "leather-watch",
+    "description": "Classic watch with a leather-style strap.",
+    "price": "1999.00",
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 22,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1093,
+  "fields": {
+    "category": 16,
+    "name": "Jewellery Gift Box",
+    "slug": "jewellery-gift-box",
+    "description": "Elegant jewellery storage and presentation box.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 60,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1094,
+  "fields": {
+    "category": 16,
+    "name": "Pearl Necklace",
+    "slug": "pearl-necklace",
+    "description": "Classic pearl necklace suitable for formal occasions.",
+    "price": "1899.00",
+    "image": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 15,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1095,
+  "fields": {
+    "category": 16,
+    "name": "Silver Chain",
+    "slug": "silver-chain",
+    "description": "Minimal silver chain suitable for everyday wear.",
+    "price": "999.00",
+    "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1096,
+  "fields": {
+    "category": 16,
+    "name": "Fashion Anklet",
+    "slug": "fashion-anklet",
+    "description": "Delicate anklet designed for casual fashion styling.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1603561596112-db5d8f9d8b5d",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 45,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1097,
+  "fields": {
+    "category": 16,
+    "name": "Jewellery Organizer",
+    "slug": "jewellery-organizer",
+    "description": "Compact organizer with compartments for jewellery and accessories.",
+    "price": "799.00",
+    "image": "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1098,
+  "fields": {
+    "category": 16,
+    "name": "Crystal Earrings",
+    "slug": "crystal-earrings",
+    "description": "Elegant crystal earrings designed for special occasions.",
+    "price": "1199.00",
+    "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 25,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1099,
+  "fields": {
+    "category": 17,
+    "name": "Running Sneakers",
+    "slug": "running-sneakers",
+    "description": "Lightweight sneakers designed for running and daily workouts.",
+    "price": "2499.00",
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 45,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1100,
+  "fields": {
+    "category": 17,
+    "name": "Leather Formal Shoes",
+    "slug": "leather-formal-shoes",
+    "description": "Classic formal shoes suitable for office and professional occasions.",
+    "price": "2999.00",
+    "image": "https://images.unsplash.com/photo-1614252369475-531eba835eb1",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1101,
+  "fields": {
+    "category": 17,
+    "name": "Casual Sneakers",
+    "slug": "casual-sneakers",
+    "description": "Versatile sneakers designed for everyday casual outfits.",
+    "price": "1999.00",
+    "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 55,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1102,
+  "fields": {
+    "category": 17,
+    "name": "Women Sandals",
+    "slug": "women-sandals",
+    "description": "Comfortable sandals suitable for everyday summer wear.",
+    "price": "999.00",
+    "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 50,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1103,
+  "fields": {
+    "category": 17,
+    "name": "Leather Boots",
+    "slug": "leather-boots",
+    "description": "Durable boots with a classic design for everyday wear.",
+    "price": "3499.00",
+    "image": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 18,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1104,
+  "fields": {
+    "category": 17,
+    "name": "Flip Flops",
+    "slug": "flip-flops",
+    "description": "Lightweight comfortable flip flops for casual use.",
+    "price": "399.00",
+    "image": "https://images.unsplash.com/photo-1603487742131-4160ec999306",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 100,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1105,
+  "fields": {
+    "category": 17,
+    "name": "Sports Shoes",
+    "slug": "sports-shoes",
+    "description": "Breathable sports shoes designed for training and active lifestyles.",
+    "price": "2199.00",
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 40,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1106,
+  "fields": {
+    "category": 17,
+    "name": "Canvas Shoes",
+    "slug": "canvas-shoes",
+    "description": "Classic canvas shoes suitable for everyday casual wear.",
+    "price": "1299.00",
+    "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 60,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1107,
+  "fields": {
+    "category": 17,
+    "name": "Loafers",
+    "slug": "loafers",
+    "description": "Smart casual loafers suitable for office and weekend outfits.",
+    "price": "1999.00",
+    "image": "https://images.unsplash.com/photo-1533867617858-e7b97e060509",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1108,
+  "fields": {
+    "category": 17,
+    "name": "Walking Shoes",
+    "slug": "walking-shoes",
+    "description": "Comfortable cushioned shoes designed for everyday walking.",
+    "price": "1799.00",
+    "image": "https://images.unsplash.com/photo-1552346154-21d32810aba3",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 50,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1109,
+  "fields": {
+    "category": 17,
+    "name": "Kids Sneakers",
+    "slug": "kids-sneakers",
+    "description": "Comfortable lightweight sneakers designed for active children.",
+    "price": "999.00",
+    "image": "https://images.unsplash.com/photo-1514989940723-e8e51635b782",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 40,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1110,
+  "fields": {
+    "category": 17,
+    "name": "House Slippers",
+    "slug": "house-slippers",
+    "description": "Soft comfortable slippers suitable for indoor use.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 75,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1111,
+  "fields": {
+    "category": 17,
+    "name": "Hiking Boots",
+    "slug": "hiking-boots",
+    "description": "Durable outdoor boots designed for hiking and trekking.",
+    "price": "3299.00",
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 20,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1112,
+  "fields": {
+    "category": 17,
+    "name": "Moccasins",
+    "slug": "moccasins",
+    "description": "Comfortable moccasins suitable for smart casual outfits.",
+    "price": "1599.00",
+    "image": "https://images.unsplash.com/photo-1533867617858-e7b97e060509",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1113,
+  "fields": {
+    "category": 17,
+    "name": "Platform Sandals",
+    "slug": "platform-sandals",
+    "description": "Fashionable platform sandals designed for casual occasions.",
+    "price": "1299.00",
+    "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1114,
+  "fields": {
+    "category": 18,
+    "name": "Cabin Suitcase",
+    "slug": "cabin-suitcase",
+    "description": "Compact hard-shell suitcase suitable for cabin travel.",
+    "price": "2999.00",
+    "image": "https://images.unsplash.com/photo-1565026057447-bc90a0397052",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 25,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1115,
+  "fields": {
+    "category": 18,
+    "name": "Travel Backpack",
+    "slug": "travel-backpack",
+    "description": "Spacious travel backpack with multiple compartments.",
+    "price": "1999.00",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 45,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1116,
+  "fields": {
+    "category": 18,
+    "name": "Passport Holder",
+    "slug": "passport-holder",
+    "description": "Compact passport holder with slots for cards and travel documents.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1548013146-72479768bada",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 70,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1117,
+  "fields": {
+    "category": 18,
+    "name": "Travel Organizer",
+    "slug": "travel-organizer",
+    "description": "Multi-compartment organizer for cables, chargers, and accessories.",
+    "price": "699.00",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 55,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1118,
+  "fields": {
+    "category": 18,
+    "name": "Neck Travel Pillow",
+    "slug": "neck-travel-pillow",
+    "description": "Memory foam travel pillow designed for comfortable journeys.",
+    "price": "799.00",
+    "image": "https://images.unsplash.com/photo-1520201163981-8cc95007dd2a",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 60,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1119,
+  "fields": {
+    "category": 18,
+    "name": "Luggage Scale",
+    "slug": "luggage-scale",
+    "description": "Compact digital scale for checking luggage weight before travel.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 80,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1120,
+  "fields": {
+    "category": 18,
+    "name": "Packing Cubes Set",
+    "slug": "packing-cubes-set",
+    "description": "Set of packing cubes designed to organize luggage efficiently.",
+    "price": "899.00",
+    "image": "https://images.unsplash.com/photo-1553531384-397c80973a0b",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 45,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1121,
+  "fields": {
+    "category": 18,
+    "name": "Travel Toiletry Bag",
+    "slug": "travel-toiletry-bag",
+    "description": "Water-resistant toiletry bag with multiple compartments.",
+    "price": "599.00",
+    "image": "https://images.unsplash.com/photo-1556228578-8c89e6adf883",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 50,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1122,
+  "fields": {
+    "category": 18,
+    "name": "Foldable Travel Bag",
+    "slug": "foldable-travel-bag",
+    "description": "Lightweight foldable bag for additional travel storage.",
+    "price": "799.00",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 40,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1123,
+  "fields": {
+    "category": 18,
+    "name": "Travel Adapter",
+    "slug": "travel-adapter",
+    "description": "Universal travel adapter compatible with multiple socket types.",
+    "price": "999.00",
+    "image": "https://images.unsplash.com/photo-1556075798-4825dfaaf498",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1124,
+  "fields": {
+    "category": 18,
+    "name": "Waterproof Dry Bag",
+    "slug": "waterproof-dry-bag",
+    "description": "Water-resistant bag designed to protect belongings during outdoor travel.",
+    "price": "699.00",
+    "image": "https://images.unsplash.com/photo-1528543606781-2f6e6857f318",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1125,
+  "fields": {
+    "category": 18,
+    "name": "Travel Blanket",
+    "slug": "travel-blanket",
+    "description": "Compact soft blanket suitable for flights and road trips.",
+    "price": "899.00",
+    "image": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 25,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1126,
+  "fields": {
+    "category": 18,
+    "name": "Large Trolley Bag",
+    "slug": "large-trolley-bag",
+    "description": "Spacious wheeled suitcase designed for longer trips.",
+    "price": "3999.00",
+    "image": "https://images.unsplash.com/photo-1565026057447-bc90a0397052",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 18,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1127,
+  "fields": {
+    "category": 18,
+    "name": "Travel Lock Set",
+    "slug": "travel-lock-set",
+    "description": "Durable combination locks for securing luggage during travel.",
+    "price": "399.00",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 75,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1128,
+  "fields": {
+    "category": 18,
+    "name": "Travel Shoe Bag",
+    "slug": "travel-shoe-bag",
+    "description": "Compact shoe bags for keeping footwear separate inside luggage.",
+    "price": "299.00",
+    "image": "https://images.unsplash.com/photo-1553531384-397c80973a0b",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 90,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1129,
+  "fields": {
+    "category": 19,
+    "name": "A5 Notebook",
+    "slug": "a5-notebook",
+    "description": "Premium ruled notebook suitable for notes, planning, and journaling.",
+    "price": "249.00",
+    "image": "https://images.unsplash.com/photo-1531346878377-a5be20888e57",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 100,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1130,
+  "fields": {
+    "category": 19,
+    "name": "Ballpoint Pen Set",
+    "slug": "ballpoint-pen-set",
+    "description": "Set of smooth-writing ballpoint pens for everyday use.",
+    "price": "199.00",
+    "image": "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 150,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1131,
+  "fields": {
+    "category": 19,
+    "name": "Desk Organizer",
+    "slug": "desk-organizer",
+    "description": "Multi-compartment organizer for keeping stationery neatly arranged.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 60,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1132,
+  "fields": {
+    "category": 19,
+    "name": "Sticky Notes Pack",
+    "slug": "sticky-notes-pack",
+    "description": "Colorful sticky notes for reminders, planning, and organization.",
+    "price": "149.00",
+    "image": "https://images.unsplash.com/photo-1586281380349-632531db7ed4",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 120,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1133,
+  "fields": {
+    "category": 19,
+    "name": "Document Folder",
+    "slug": "document-folder",
+    "description": "Durable folder for organizing important papers and documents.",
+    "price": "199.00",
+    "image": "https://images.unsplash.com/photo-1568667256549-094345857637",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 80,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1134,
+  "fields": {
+    "category": 19,
+    "name": "Stapler",
+    "slug": "stapler",
+    "description": "Compact desktop stapler suitable for everyday office use.",
+    "price": "249.00",
+    "image": "https://images.unsplash.com/photo-1586282391129-76a6df230234",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 75,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1135,
+  "fields": {
+    "category": 19,
+    "name": "Desk Calculator",
+    "slug": "desk-calculator",
+    "description": "Large-display calculator for office and business calculations.",
+    "price": "399.00",
+    "image": "https://images.unsplash.com/photo-1587145820266-a5951ee6f620",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 55,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1136,
+  "fields": {
+    "category": 19,
+    "name": "Whiteboard",
+    "slug": "whiteboard",
+    "description": "Magnetic whiteboard suitable for offices, classrooms, and home workspaces.",
+    "price": "999.00",
+    "image": "https://images.unsplash.com/photo-1506377295352-e3154d43ea9e",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 25,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1137,
+  "fields": {
+    "category": 19,
+    "name": "Printer Paper A4",
+    "slug": "printer-paper-a4",
+    "description": "High-quality A4 printer paper suitable for documents and reports.",
+    "price": "299.00",
+    "image": "https://images.unsplash.com/photo-1455390582262-044cdead277a",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 100,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1138,
+  "fields": {
+    "category": 19,
+    "name": "Highlighter Set",
+    "slug": "highlighter-set",
+    "description": "Set of bright highlighters for study and office organization.",
+    "price": "249.00",
+    "image": "https://images.unsplash.com/photo-1586281380349-632531db7ed4",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 90,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1139,
+  "fields": {
+    "category": 19,
+    "name": "File Binder",
+    "slug": "file-binder",
+    "description": "Durable ring binder for storing documents and reports.",
+    "price": "299.00",
+    "image": "https://images.unsplash.com/photo-1568667256549-094345857637",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 70,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1140,
+  "fields": {
+    "category": 19,
+    "name": "Desk Calendar",
+    "slug": "desk-calendar",
+    "description": "Compact desk calendar for planning meetings and important dates.",
+    "price": "199.00",
+    "image": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 65,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1141,
+  "fields": {
+    "category": 19,
+    "name": "USB Desk Fan",
+    "slug": "usb-desk-fan",
+    "description": "Compact USB-powered desk fan for personal workspace cooling.",
+    "price": "699.00",
+    "image": "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1142,
+  "fields": {
+    "category": 19,
+    "name": "Ergonomic Office Chair",
+    "slug": "ergonomic-office-chair",
+    "description": "Adjustable ergonomic chair designed for comfortable desk work.",
+    "price": "8999.00",
+    "image": "https://images.unsplash.com/photo-1580480055273-228ff5388ef8",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 10,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1143,
+  "fields": {
+    "category": 19,
+    "name": "Laptop Backpack",
+    "slug": "office-laptop-backpack",
+    "description": "Professional laptop backpack with padded compartments and organizer pockets.",
+    "price": "1799.00",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1144,
+  "fields": {
+    "category": 20,
+    "name": "Garden Hand Trowel",
+    "slug": "garden-hand-trowel",
+    "description": "Durable hand trowel for planting and small gardening tasks.",
+    "price": "299.00",
+    "image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 70,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1145,
+  "fields": {
+    "category": 20,
+    "name": "Watering Can",
+    "slug": "watering-can",
+    "description": "Lightweight watering can for indoor and outdoor plants.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 50,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1146,
+  "fields": {
+    "category": 20,
+    "name": "Garden Gloves",
+    "slug": "garden-gloves",
+    "description": "Protective gardening gloves with durable grip.",
+    "price": "299.00",
+    "image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 80,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1147,
+  "fields": {
+    "category": 20,
+    "name": "Pruning Shears",
+    "slug": "pruning-shears",
+    "description": "Sharp pruning shears for trimming plants and small branches.",
+    "price": "599.00",
+    "image": "https://images.unsplash.com/photo-1599685315640-7c4a6c1f6a6a",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 40,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1148,
+  "fields": {
+    "category": 20,
+    "name": "Plant Mister",
+    "slug": "plant-mister",
+    "description": "Fine-mist spray bottle suitable for indoor plants.",
+    "price": "249.00",
+    "image": "https://images.unsplash.com/photo-1485955900006-10f4d324d411",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 65,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1149,
+  "fields": {
+    "category": 20,
+    "name": "Terracotta Pot Set",
+    "slug": "terracotta-pot-set",
+    "description": "Set of classic terracotta pots for plants and herbs.",
+    "price": "799.00",
+    "image": "https://images.unsplash.com/photo-1485955900006-10f4d324d411",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 45,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1150,
+  "fields": {
+    "category": 20,
+    "name": "Garden Hose",
+    "slug": "garden-hose",
+    "description": "Flexible garden hose suitable for watering lawns and plants.",
+    "price": "999.00",
+    "image": "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1151,
+  "fields": {
+    "category": 20,
+    "name": "Outdoor Lantern",
+    "slug": "outdoor-lantern",
+    "description": "Decorative outdoor lantern suitable for patios and gardens.",
+    "price": "899.00",
+    "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1152,
+  "fields": {
+    "category": 20,
+    "name": "Camping Tent",
+    "slug": "camping-tent",
+    "description": "Compact two-person camping tent suitable for outdoor adventures.",
+    "price": "2999.00",
+    "image": "https://images.unsplash.com/photo-1504851149312-7a075b496cc7",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 15,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1153,
+  "fields": {
+    "category": 20,
+    "name": "Camping Chair",
+    "slug": "camping-chair",
+    "description": "Foldable outdoor chair suitable for camping and picnics.",
+    "price": "1299.00",
+    "image": "https://images.unsplash.com/photo-1504851149312-7a075b496cc7",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 25,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1154,
+  "fields": {
+    "category": 20,
+    "name": "Picnic Blanket",
+    "slug": "picnic-blanket",
+    "description": "Water-resistant picnic blanket suitable for outdoor activities.",
+    "price": "899.00",
+    "image": "https://images.unsplash.com/photo-1473445361085-b9a07f55608b",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1155,
+  "fields": {
+    "category": 20,
+    "name": "Garden Solar Light",
+    "slug": "garden-solar-light",
+    "description": "Solar-powered outdoor light for pathways and garden decoration.",
+    "price": "699.00",
+    "image": "https://images.unsplash.com/photo-1509391366360-2e959784a276",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 50,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1156,
+  "fields": {
+    "category": 20,
+    "name": "Plant Support Stakes",
+    "slug": "plant-support-stakes",
+    "description": "Garden stakes for supporting climbing plants and young plants.",
+    "price": "249.00",
+    "image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 90,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1157,
+  "fields": {
+    "category": 20,
+    "name": "Gardening Tool Set",
+    "slug": "gardening-tool-set",
+    "description": "Complete hand tool set for everyday gardening tasks.",
+    "price": "999.00",
+    "image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1158,
+  "fields": {
+    "category": 20,
+    "name": "Outdoor Storage Box",
+    "slug": "outdoor-storage-box",
+    "description": "Weather-resistant storage box for garden and outdoor accessories.",
+    "price": "3499.00",
+    "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 12,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1159,
+  "fields": {
+    "category": 21,
+    "name": "Acoustic Guitar",
+    "slug": "acoustic-guitar",
+    "description": "Full-size acoustic guitar suitable for beginners and intermediate players.",
+    "price": "6999.00",
+    "image": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 15,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1160,
+  "fields": {
+    "category": 21,
+    "name": "Ukulele",
+    "slug": "ukulele",
+    "description": "Compact four-string ukulele suitable for beginners.",
+    "price": "2499.00",
+    "image": "https://images.unsplash.com/photo-1524650359799-842906ca1c06",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 25,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1161,
+  "fields": {
+    "category": 21,
+    "name": "Digital Piano",
+    "slug": "digital-piano",
+    "description": "Compact digital piano with multiple instrument sounds.",
+    "price": "18999.00",
+    "image": "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 8,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1162,
+  "fields": {
+    "category": 21,
+    "name": "Electronic Keyboard",
+    "slug": "electronic-keyboard",
+    "description": "Portable electronic keyboard suitable for learning and performance.",
+    "price": "6999.00",
+    "image": "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 12,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1163,
+  "fields": {
+    "category": 21,
+    "name": "Drum Practice Pad",
+    "slug": "drum-practice-pad",
+    "description": "Quiet practice pad for developing drumming technique.",
+    "price": "1499.00",
+    "image": "https://images.unsplash.com/photo-1543443258-5a3b6c4a9f3d",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 20,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1164,
+  "fields": {
+    "category": 21,
+    "name": "Violin Beginner Set",
+    "slug": "violin-beginner-set",
+    "description": "Beginner violin set including essential accessories.",
+    "price": "5999.00",
+    "image": "https://images.unsplash.com/photo-1460039230329-eb070fc6c77c",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 10,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1165,
+  "fields": {
+    "category": 21,
+    "name": "Harmonica",
+    "slug": "harmonica",
+    "description": "Compact harmonica suitable for beginners and casual musicians.",
+    "price": "799.00",
+    "image": "https://images.unsplash.com/photo-1511192336575-5a79af67a629",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1166,
+  "fields": {
+    "category": 21,
+    "name": "Classical Guitar Strings",
+    "slug": "classical-guitar-strings",
+    "description": "Replacement nylon strings for classical acoustic guitars.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 50,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1167,
+  "fields": {
+    "category": 21,
+    "name": "Guitar Tuner",
+    "slug": "guitar-tuner",
+    "description": "Compact digital tuner for accurate instrument tuning.",
+    "price": "399.00",
+    "image": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 60,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1168,
+  "fields": {
+    "category": 21,
+    "name": "Guitar Capo",
+    "slug": "guitar-capo",
+    "description": "Easy-to-use capo suitable for acoustic and electric guitars.",
+    "price": "299.00",
+    "image": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 75,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1169,
+  "fields": {
+    "category": 21,
+    "name": "Microphone Stand",
+    "slug": "microphone-stand",
+    "description": "Adjustable microphone stand for recording and live performances.",
+    "price": "1299.00",
+    "image": "https://images.unsplash.com/photo-1516280440614-37939bbacd81",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 25,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1170,
+  "fields": {
+    "category": 21,
+    "name": "Studio Microphone",
+    "slug": "studio-microphone",
+    "description": "Condenser microphone suitable for recording vocals and instruments.",
+    "price": "4999.00",
+    "image": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 15,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1171,
+  "fields": {
+    "category": 21,
+    "name": "Drum Sticks",
+    "slug": "drum-sticks",
+    "description": "Pair of durable wooden drumsticks for practice and performance.",
+    "price": "299.00",
+    "image": "https://images.unsplash.com/photo-1543443258-5a3b6c4a9f3d",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 60,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1172,
+  "fields": {
+    "category": 21,
+    "name": "Music Stand",
+    "slug": "music-stand",
+    "description": "Adjustable folding music stand for practice and performances.",
+    "price": "899.00",
+    "image": "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1173,
+  "fields": {
+    "category": 21,
+    "name": "Guitar Picks Set",
+    "slug": "guitar-picks-set",
+    "description": "Assorted guitar picks in different thicknesses.",
+    "price": "199.00",
+    "image": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 100,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1174,
+  "fields": {
+    "category": 22,
+    "name": "Acrylic Paint Set",
+    "slug": "acrylic-paint-set",
+    "description": "Set of vibrant acrylic paints suitable for canvas and craft projects.",
+    "price": "599.00",
+    "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 55,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1175,
+  "fields": {
+    "category": 22,
+    "name": "Watercolor Set",
+    "slug": "watercolor-set",
+    "description": "Watercolor set with multiple vibrant shades for painting.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1541961017774-22349e4a1262",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 65,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1176,
+  "fields": {
+    "category": 22,
+    "name": "Sketchbook A4",
+    "slug": "sketchbook-a4",
+    "description": "High-quality blank sketchbook suitable for drawing and illustration.",
+    "price": "399.00",
+    "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 80,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1177,
+  "fields": {
+    "category": 22,
+    "name": "Colored Pencil Set",
+    "slug": "colored-pencil-set",
+    "description": "Set of smooth colored pencils for drawing and coloring.",
+    "price": "449.00",
+    "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 70,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1178,
+  "fields": {
+    "category": 22,
+    "name": "Artist Brush Set",
+    "slug": "artist-brush-set",
+    "description": "Professional brush set with multiple brush shapes and sizes.",
+    "price": "399.00",
+    "image": "https://images.unsplash.com/photo-1577083552431-6e5fd01988f5",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 60,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1179,
+  "fields": {
+    "category": 22,
+    "name": "Craft Scissors",
+    "slug": "craft-scissors",
+    "description": "Precision scissors designed for paper and craft projects.",
+    "price": "299.00",
+    "image": "https://images.unsplash.com/photo-1580136608330-7f9f1b9d8c19",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 50,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1180,
+  "fields": {
+    "category": 22,
+    "name": "Origami Paper Pack",
+    "slug": "origami-paper-pack",
+    "description": "Colorful origami paper pack for creative paper folding.",
+    "price": "199.00",
+    "image": "https://images.unsplash.com/photo-1531058020387-3be344556be6",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 100,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1181,
+  "fields": {
+    "category": 22,
+    "name": "Clay Modeling Set",
+    "slug": "clay-modeling-set",
+    "description": "Soft modeling clay set for creative sculpting projects.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1499892477393-f675706cbe6e",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 45,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1182,
+  "fields": {
+    "category": 22,
+    "name": "Canvas Boards",
+    "slug": "canvas-boards",
+    "description": "Blank canvas boards suitable for acrylic and oil painting.",
+    "price": "699.00",
+    "image": "https://images.unsplash.com/photo-1547891654-e66ed7ebb968",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1183,
+  "fields": {
+    "category": 22,
+    "name": "Calligraphy Set",
+    "slug": "calligraphy-set",
+    "description": "Beginner calligraphy set with pens, nibs, and ink.",
+    "price": "799.00",
+    "image": "https://images.unsplash.com/photo-1455390582262-044cdead277a",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1184,
+  "fields": {
+    "category": 22,
+    "name": "Craft Glue Set",
+    "slug": "craft-glue-set",
+    "description": "Multi-purpose adhesive set for paper and craft projects.",
+    "price": "249.00",
+    "image": "https://images.unsplash.com/photo-1580136608330-7f9f1b9d8c19",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 85,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1185,
+  "fields": {
+    "category": 22,
+    "name": "DIY Bead Kit",
+    "slug": "diy-bead-kit",
+    "description": "Creative bead kit for making bracelets, necklaces, and crafts.",
+    "price": "599.00",
+    "image": "https://images.unsplash.com/photo-1611652022419-a9419f74343d",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 40,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1186,
+  "fields": {
+    "category": 22,
+    "name": "Fabric Paint Set",
+    "slug": "fabric-paint-set",
+    "description": "Vibrant fabric paints suitable for customizing clothing and textiles.",
+    "price": "499.00",
+    "image": "https://images.unsplash.com/photo-1577083552431-6e5fd01988f5",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 50,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1187,
+  "fields": {
+    "category": 22,
+    "name": "Craft Paper Pack",
+    "slug": "craft-paper-pack",
+    "description": "Assorted colored craft paper for school and creative projects.",
+    "price": "249.00",
+    "image": "https://images.unsplash.com/photo-1531058020387-3be344556be6",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 100,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1188,
+  "fields": {
+    "category": 22,
+    "name": "DIY Candle Making Kit",
+    "slug": "diy-candle-making-kit",
+    "description": "Beginner-friendly candle making kit with essential crafting materials.",
+    "price": "999.00",
+    "image": "https://images.unsplash.com/photo-1603006905003-be475563bc59",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 25,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1189,
+  "fields": {
+    "category": 23,
+    "name": "Electric Kettle",
+    "slug": "electric-kettle",
+    "description": "Fast-boiling electric kettle suitable for tea, coffee, and hot water.",
+    "price": "1299.00",
+    "image": "https://images.unsplash.com/photo-1594213114663-d94db9b171e4",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 40,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1190,
+  "fields": {
+    "category": 23,
+    "name": "Air Fryer",
+    "slug": "air-fryer",
+    "description": "Compact air fryer for preparing crispy meals with less oil.",
+    "price": "4999.00",
+    "image": "https://images.unsplash.com/photo-1574158622682-e40e69881006",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 20,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1191,
+  "fields": {
+    "category": 23,
+    "name": "Mixer Grinder",
+    "slug": "mixer-grinder",
+    "description": "Multi-purpose mixer grinder for blending and food preparation.",
+    "price": "2999.00",
+    "image": "https://images.unsplash.com/photo-1570222094114-d054a817e56b",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 25,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1192,
+  "fields": {
+    "category": 23,
+    "name": "Toaster",
+    "slug": "toaster",
+    "description": "Two-slice toaster with adjustable browning settings.",
+    "price": "1499.00",
+    "image": "https://images.unsplash.com/photo-1585515320310-259814833e62",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1193,
+  "fields": {
+    "category": 23,
+    "name": "Rice Cooker",
+    "slug": "rice-cooker",
+    "description": "Automatic rice cooker suitable for convenient everyday cooking.",
+    "price": "1999.00",
+    "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1194,
+  "fields": {
+    "category": 23,
+    "name": "Coffee Maker",
+    "slug": "coffee-maker",
+    "description": "Compact coffee maker for convenient home brewing.",
+    "price": "3499.00",
+    "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 18,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1195,
+  "fields": {
+    "category": 23,
+    "name": "Electric Iron",
+    "slug": "electric-iron",
+    "description": "Adjustable-temperature steam iron for everyday garment care.",
+    "price": "1299.00",
+    "image": "https://images.unsplash.com/photo-1556760544-74068565f05c",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 45,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1196,
+  "fields": {
+    "category": 23,
+    "name": "Hand Blender",
+    "slug": "hand-blender",
+    "description": "Compact hand blender for soups, sauces, and smoothies.",
+    "price": "1499.00",
+    "image": "https://images.unsplash.com/photo-1570222094114-d054a817e56b",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 32,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1197,
+  "fields": {
+    "category": 23,
+    "name": "Juicer",
+    "slug": "juicer",
+    "description": "Powerful home juicer for fresh fruit and vegetable juices.",
+    "price": "2499.00",
+    "image": "https://images.unsplash.com/photo-1622484212850-eb596d769edc",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 20,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1198,
+  "fields": {
+    "category": 23,
+    "name": "Electric Chopper",
+    "slug": "electric-chopper",
+    "description": "Compact electric chopper for quick food preparation.",
+    "price": "999.00",
+    "image": "https://images.unsplash.com/photo-1570222094114-d054a817e56b",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 40,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1199,
+  "fields": {
+    "category": 23,
+    "name": "Sandwich Maker",
+    "slug": "sandwich-maker",
+    "description": "Compact sandwich maker for quick toasted sandwiches.",
+    "price": "1499.00",
+    "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 35,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1200,
+  "fields": {
+    "category": 23,
+    "name": "Room Heater",
+    "slug": "room-heater",
+    "description": "Compact electric heater designed for personal room heating.",
+    "price": "2499.00",
+    "image": "https://images.unsplash.com/photo-1518005020951-eccb494ad742",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 15,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1201,
+  "fields": {
+    "category": 23,
+    "name": "Table Fan",
+    "slug": "table-fan",
+    "description": "Compact oscillating table fan with multiple speed settings.",
+    "price": "1799.00",
+    "image": "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 25,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1202,
+  "fields": {
+    "category": 23,
+    "name": "Air Purifier",
+    "slug": "air-purifier",
+    "description": "Compact air purifier designed for improving indoor air quality.",
+    "price": "6999.00",
+    "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 10,
+    "is_active": true
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1203,
+  "fields": {
+    "category": 23,
+    "name": "Electric Hand Mixer",
+    "slug": "electric-hand-mixer",
+    "description": "Lightweight hand mixer for baking and kitchen preparation.",
+    "price": "1199.00",
+    "image": "https://images.unsplash.com/photo-1570222094114-d054a817e56b",
+    "created_at": "2026-09-30T14:50:08.348Z",
+    "stock": 30,
+    "is_active": true
+  }
+},
+{
+  "model": "store.cart",
+  "pk": 3,
+  "fields": {
+    "user": null,
+    "session_key": "23zub43vc3z0mgh1wt2mqvh2kk80mqbt",
+    "created_at": "2026-09-30T10:50:46.983Z",
+    "updated_at": "2026-09-30T10:54:59.868Z"
+  }
+},
+{
+  "model": "store.cart",
+  "pk": 4,
+  "fields": {
+    "user": 2,
+    "session_key": "",
+    "created_at": "2026-09-30T11:30:47.359Z",
+    "updated_at": "2026-09-30T12:20:52.454Z"
+  }
+},
+{
+  "model": "store.cart",
+  "pk": 5,
+  "fields": {
+    "user": null,
+    "session_key": "973a946gp0gin1j6teeefikvzsech69x",
+    "created_at": "2026-09-30T11:43:44.923Z",
+    "updated_at": "2026-09-30T11:43:44.923Z"
+  }
+},
+{
+  "model": "store.cart",
+  "pk": 6,
+  "fields": {
+    "user": null,
+    "session_key": "dvnvojuocls4g41tnsvtd2gugh10w8l1",
+    "created_at": "2026-09-30T11:44:19.330Z",
+    "updated_at": "2026-09-30T11:44:19.330Z"
+  }
+},
+{
+  "model": "store.cart",
+  "pk": 7,
+  "fields": {
+    "user": null,
+    "session_key": "pdge47irnep33mql1hr438y6tyy1pgnt",
+    "created_at": "2026-09-30T11:45:13.761Z",
+    "updated_at": "2026-09-30T11:52:27.372Z"
+  }
+},
+{
+  "model": "store.cart",
+  "pk": 8,
+  "fields": {
+    "user": null,
+    "session_key": "nysefm86n75576rdwthqtlw62n2eghmp",
+    "created_at": "2026-09-30T11:48:21.350Z",
+    "updated_at": "2026-09-30T11:48:21.350Z"
+  }
+},
+{
+  "model": "store.cart",
+  "pk": 9,
+  "fields": {
+    "user": 1,
+    "session_key": "",
+    "created_at": "2026-09-30T11:55:47.010Z",
+    "updated_at": "2026-09-30T14:51:06.374Z"
+  }
+},
+{
+  "model": "store.cart",
+  "pk": 11,
+  "fields": {
+    "user": null,
+    "session_key": "xflg9t046cyp6yeto3dputl0b6uicct6",
+    "created_at": "2026-09-30T12:20:21.354Z",
+    "updated_at": "2026-09-30T12:20:26.608Z"
+  }
+},
+{
+  "model": "store.cartitem",
+  "pk": 3,
+  "fields": {
+    "cart": 3,
+    "product": 2,
+    "quantity": 4
+  }
+},
+{
+  "model": "store.cartitem",
+  "pk": 11,
+  "fields": {
+    "cart": 11,
+    "product": 3,
+    "quantity": 1
+  }
+},
+{
+  "model": "store.cartitem",
+  "pk": 12,
+  "fields": {
+    "cart": 4,
+    "product": 3,
+    "quantity": 1
+  }
+},
+{
+  "model": "store.cartitem",
+  "pk": 14,
+  "fields": {
+    "cart": 9,
+    "product": 1195,
+    "quantity": 2
+  }
+},
+{
+  "model": "store.order",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "status": "placed",
+    "created_at": "2026-09-30T12:08:02.886Z",
+    "total_price": "25.99",
+    "shipping_full_name": "",
+    "shipping_phone": "",
+    "shipping_address_line_1": "",
+    "shipping_address_line_2": "",
+    "shipping_city": "",
+    "shipping_state": "",
+    "shipping_postal_code": "",
+    "shipping_country": ""
+  }
+},
+{
+  "model": "store.order",
+  "pk": 3,
+  "fields": {
+    "user": 1,
+    "status": "placed",
+    "created_at": "2026-09-30T14:07:52.856Z",
+    "total_price": "10.00",
+    "shipping_full_name": "Sona Sivasundari",
+    "shipping_phone": "+916381703229",
+    "shipping_address_line_1": "5/874 Thiruvalluvar street Kooturavu Nagar Dindigul",
+    "shipping_address_line_2": "",
+    "shipping_city": "Dindigul",
+    "shipping_state": "Tamil Nadu",
+    "shipping_postal_code": "624005",
+    "shipping_country": "India"
+  }
+},
+{
+  "model": "store.orderitem",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "product": 3,
+    "quantity": 1,
+    "unit_price": "10.00"
+  }
+},
+{
+  "model": "store.orderitem",
+  "pk": 2,
+  "fields": {
+    "order": 1,
+    "product": 2,
+    "quantity": 1,
+    "unit_price": "15.99"
+  }
+},
+{
+  "model": "store.orderitem",
+  "pk": 4,
+  "fields": {
+    "order": 3,
+    "product": 3,
+    "quantity": 1,
+    "unit_price": "10.00"
+  }
+},
+{
+  "model": "store.address",
+  "pk": 2,
+  "fields": {
+    "user": 2,
+    "full_name": "Test 2",
+    "phone": "7283681927",
+    "address_line_1": "sdc",
+    "address_line_2": "sdc s",
+    "city": "Guildford",
+    "state": "Surrey",
+    "postal_code": "GU2 7XR",
+    "country": "United Kingdom",
+    "is_default": true,
+    "created_at": "2026-09-30T13:11:45.315Z",
+    "updated_at": "2026-09-30T13:11:45.315Z"
+  }
+},
+{
+  "model": "store.address",
+  "pk": 3,
+  "fields": {
+    "user": 1,
+    "full_name": "Sona Sivasundari",
+    "phone": "+916381703229",
+    "address_line_1": "No.4, Hanvee Residency, Vaigai Street,",
+    "address_line_2": "Devi Karumariamman nagar extn, Vijaynagar, Velachery",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "postal_code": "600042",
+    "country": "India",
+    "is_default": false,
+    "created_at": "2026-09-30T14:07:25.490Z",
+    "updated_at": "2026-09-30T14:07:25.490Z"
+  }
+},
+{
+  "model": "store.address",
+  "pk": 4,
+  "fields": {
+    "user": 1,
+    "full_name": "Sona Sivasundari",
+    "phone": "+916381703229",
+    "address_line_1": "5/874 Thiruvalluvar street Kooturavu Nagar Dindigul",
+    "address_line_2": "",
+    "city": "Dindigul",
+    "state": "Tamil Nadu",
+    "postal_code": "624005",
+    "country": "India",
+    "is_default": true,
+    "created_at": "2026-09-30T14:07:37.234Z",
+    "updated_at": "2026-09-30T14:07:42.228Z"
+  }
+}
+]
