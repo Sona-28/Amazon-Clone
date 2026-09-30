@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Cart · Amazone{% endblock %}
+
+{% block content %}
+  <section class="page-intro">
+    <p class="eyebrow">Your bag</p>
+    <h1>Cart</h1>
+    <p>Sample items for the wireframe. Quantity and remove update this page in the browser only.</p>
+  </section>
+
+  <p class="cart-empty" hidden>Your cart is empty. <a href="{% url 'home' %}">Continue shopping</a></p>
+
+  <section class="cart-layout">
+    <div class="cart-items">
+      {% for item in cart_items %}
+        <article class="cart-item" data-price="{{ item.price }}" data-qty="{{ item.quantity }}">
+          <img src="{% static item.image %}" alt="{{ item.name }}">
+          <div>
+            <h2>{{ item.name }}</h2>
+            <p class="price">${{ item.price|floatformat:2 }}</p>
+            <div class="qty" aria-label="Quantity for {{ item.name }}">
+              <button type="button" data-qty="-1" aria-label="Decrease quantity of {{ item.name }}">−</button>
+              <span class="qty-value">{{ item.quantity }}</span>
+              <button type="button" data-qty="1" aria-label="Increase quantity of {{ item.name }}">+</button>
+            </div>
+            <button class="text-button" type="button" data-remove>Remove</button>
+          </div>
+          <p class="line-total">${{ item.line_total|floatformat:2 }}</p>
+        </article>
+      {% endfor %}
+    </div>
+
+    <aside class="summary">
+      <h2>Order summary</h2>
+      <p><span>Subtotal</span> <strong data-subtotal>${{ subtotal|floatformat:2 }}</strong></p>
+      <p><span>Shipping</span> <strong>Calculated later</strong></p>
+      <p class="summary-total"><span>Total</span> <strong data-total>${{ total|floatformat:2 }}</strong></p>
+      <button class="button" type="button" data-checkout>Proceed to Checkout</button>
+      <p class="checkout-notice" data-checkout-notice hidden>Checkout is not available in this phase.</p>
+      <a href="{% url 'home' %}">Continue shopping</a>
+    </aside>
+  </section>
+{% endblock %}

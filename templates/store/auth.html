@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}Sign in · Amazone{% endblock %}
+
+{% block content %}
+  <section class="auth-layout">
+    <div class="auth-intro">
+      <p class="eyebrow">Account</p>
+      <h1>Sign in or create an account.</h1>
+      <p>These forms are wired into the page so you can move between them. They do not create accounts yet.</p>
+    </div>
+
+    <div class="auth-card">
+      <div class="auth-switch">
+        <a href="{% url 'auth' %}?panel=sign-in" {% if panel == 'sign-in' %}aria-current="page"{% endif %}>Sign in</a>
+        <a href="{% url 'auth' %}?panel=register" {% if panel == 'register' %}aria-current="page"{% endif %}>Register</a>
+      </div>
+
+      {% if panel == 'register' %}
+        <form method="post" action="{% url 'auth' %}">
+          {% csrf_token %}
+          <input type="hidden" name="panel" value="register">
+          <h2>Create account</h2>
+          <label for="register-name">Name</label>
+          <input id="register-name" name="name" type="text" autocomplete="name" placeholder="Your name">
+          <label for="register-email">Email</label>
+          <input id="register-email" name="email" type="email" autocomplete="email" placeholder="you@email.com">
+          <label for="register-password">Password</label>
+          <input id="register-password" name="password" type="password" autocomplete="new-password" placeholder="Create a password">
+          <button class="button" type="submit">Create account</button>
+          <p class="form-links">
+            Already have an account? <a href="{% url 'auth' %}?panel=sign-in">Sign in</a>
+          </p>
+        </form>
+      {% elif panel == 'forgot' %}
+        <form method="post" action="{% url 'auth' %}">
+          {% csrf_token %}
+          <input type="hidden" name="panel" value="forgot">
+          <h2>Reset password</h2>
+          <p class="form-note">Password reset is not active yet. This form confirms the page flow.</p>
+          <label for="forgot-email">Email</label>
+          <input id="forgot-email" name="email" type="email" autocomplete="email" placeholder="you@email.com">
+          <button class="button" type="submit">Send reset link</button>
+          <p class="form-links">
+            <a href="{% url 'auth' %}?panel=sign-in">Back to sign in</a>
+          </p>
+        </form>
+      {% else %}
+        <form method="post" action="{% url 'auth' %}">
+          {% csrf_token %}
+          <input type="hidden" name="panel" value="sign-in">
+          <h2>Sign in</h2>
+          <label for="signin-email">Email</label>
+          <input id="signin-email" name="email" type="email" autocomplete="email" placeholder="you@email.com">
+          <label for="signin-password">Password</label>
+          <input id="signin-password" name="password" type="password" autocomplete="current-password" placeholder="Your password">
+          <button class="button" type="submit">Sign in</button>
+          <p class="form-links">
+            <a href="{% url 'auth' %}?panel=forgot">Forgot password?</a>
+            <a href="{% url 'auth' %}?panel=register">Create an account</a>
+          </p>
+        </form>
+      {% endif %}
+    </div>
+  </section>
+{% endblock %}

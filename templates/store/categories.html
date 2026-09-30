@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Categories · Amazone{% endblock %}
+
+{% block content %}
+  <section class="page-intro">
+    <p class="eyebrow">Browse</p>
+    <h1>Categories</h1>
+    <p>Placeholder departments. Product listing pages will be added later.</p>
+  </section>
+  <section class="section">
+    <div class="category-grid category-grid-page">
+      {% for category in categories %}
+        <article class="category-card tone-{{ category.tone }}">
+          <span>{{ category.name }}</span>
+          <small>{{ category.detail }}</small>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+{% endblock %}
