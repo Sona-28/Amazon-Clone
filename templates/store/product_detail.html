@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}{{ product.name }} · Amazone{% endblock %}
+
+{% block content %}
+  <article class="product-detail">
+    <p class="eyebrow">
+      <a href="{% url 'category_products' product.category.slug %}">{{ product.category }}</a>
+    </p>
+    <div class="product-detail-layout">
+      <div class="product-detail-image">
+        {% if product.image_src %}
+          <img src="{{ product.image_src }}" alt="{{ product.name }}">
+        {% else %}
+          <div class="product-placeholder" role="img" aria-label="{{ product.name }}"></div>
+        {% endif %}
+      </div>
+      <div class="product-detail-info">
+        <h1>{{ product.name }}</h1>
+        {% if product.description %}
+          <p>{{ product.description }}</p>
+        {% endif %}
+        <p class="price">${{ product.price|floatformat:2 }}</p>
+        {% if product.stock > 0 %}
+          <p class="stock stock-in">In stock · {{ product.stock }} available</p>
+          <form method="post" action="{% url 'product_detail' product.slug %}">
+            {% csrf_token %}
+            <label for="quantity">Quantity</label>
+            <input id="quantity" name="quantity" type="number" value="1" min="1" max="{{ product.stock }}">
+            <button class="button" type="submit">Add to cart</button>
+          </form>
+        {% else %}
+          <p class="stock stock-out">Out of stock</p>
+        {% endif %}
+      </div>
+    </div>
+  </article>
+{% endblock %}

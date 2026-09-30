@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Order confirmed · Amazone{% endblock %}
+
+{% block content %}
+  <section class="page-intro">
+    <p class="eyebrow">Order confirmed</p>
+    <h1>Thank you for your order.</h1>
+    <p>Order #{{ order.id }} is placed. Pay with cash when it arrives.</p>
+  </section>
+
+  <section class="cart-layout">
+    <div class="cart-items">
+      {% for item in order_items %}
+        <article class="cart-item">
+          {% if item.product.image_src %}
+            <img src="{{ item.product.image_src }}" alt="{{ item.product.name }}">
+          {% else %}
+            <div class="product-placeholder" role="img" aria-label="{{ item.product.name }}"></div>
+          {% endif %}
+          <div>
+            <h2>{{ item.product.name }}</h2>
+            <p class="price">${{ item.unit_price|floatformat:2 }}</p>
+            <p class="kicker">Qty {{ item.quantity }}</p>
+          </div>
+          <p class="line-total">${{ item.line_total|floatformat:2 }}</p>
+        </article>
+      {% endfor %}
+    </div>
+
+    <aside class="summary">
+      <h2>Order summary</h2>
+      <p><span>Status</span> <strong>{{ order.get_status_display }}</strong></p>
+      <p><span>Payment</span> <strong>Cash on Delivery</strong></p>
+      <p class="summary-total"><span>Total</span> <strong>${{ order.total_price|floatformat:2 }}</strong></p>
+      <a class="button" href="{% url 'home' %}">Continue shopping</a>
+    </aside>
+  </section>
+{% endblock %}

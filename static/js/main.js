@@ -10,64 +10,55 @@ if (toggle && nav) {
   });
 }
 
-function money(value) {
-  return `$${value.toFixed(2)}`;
-}
-
-function refreshCart() {
-  const items = [...document.querySelectorAll(".cart-item")];
-  let subtotal = 0;
-
-  items.forEach((item) => {
-    const line = Number(item.dataset.price) * Number(item.dataset.qty);
-    subtotal += line;
-    const lineTotal = item.querySelector(".line-total");
-    const quantity = item.querySelector(".qty-value");
-    if (lineTotal) lineTotal.textContent = money(line);
-    if (quantity) quantity.textContent = item.dataset.qty;
-  });
-
-  const subtotalNode = document.querySelector("[data-subtotal]");
-  const totalNode = document.querySelector("[data-total]");
-  if (subtotalNode) subtotalNode.textContent = money(subtotal);
-  if (totalNode) totalNode.textContent = money(subtotal);
-
-  const count = document.querySelector(".cart-count");
-  if (count && document.querySelector(".cart-layout")) {
-    count.textContent = String(items.length);
-  }
-
-  const empty = document.querySelector(".cart-empty");
-  const layout = document.querySelector(".cart-layout");
-  if (empty && layout) {
-    empty.hidden = items.length > 0;
-    layout.hidden = items.length === 0;
-  }
-}
-
-document.querySelectorAll(".cart-item").forEach((item) => {
-  item.addEventListener("click", (event) => {
-    const button = event.target.closest("button");
-    if (!button) return;
-
-    if (button.hasAttribute("data-remove")) {
-      item.remove();
-      refreshCart();
-      return;
-    }
-
-    const delta = Number(button.dataset.qty || 0);
-    if (!delta) return;
-    const next = Math.max(1, Number(item.dataset.qty) + delta);
-    item.dataset.qty = String(next);
-    refreshCart();
-  });
-});
-
 const checkout = document.querySelector("[data-checkout]");
 const notice = document.querySelector("[data-checkout-notice]");
 if (checkout && notice) {
   checkout.addEventListener("click", () => {
     notice.hidden = false;
   });
+}
+
+const addressModal = document.getElementById("address-modal");
+const openAddressModal = document.getElementById("open-address-modal");
+const closeAddressModal = document.getElementById("close-address-modal");
+
+if (addressModal && openAddressModal) {
+
+    function openModal() {
+        addressModal.hidden = false;
+        addressModal.setAttribute("aria-hidden", "false");
+
+        document.body.classList.add("modal-open");
+
+        const firstInput = addressModal.querySelector("input");
+
+        if (firstInput) {
+            firstInput.focus();
+        }
+    }
+
+    function closeModal() {
+        addressModal.hidden = true;
+        addressModal.setAttribute("aria-hidden", "true");
+
+        document.body.classList.remove("modal-open");
+    }
+
+    openAddressModal.addEventListener("click", openModal);
+
+    if (closeAddressModal) {
+        closeAddressModal.addEventListener("click", closeModal);
+    }
+
+    addressModal
+        .querySelectorAll("[data-close-address-modal]")
+        .forEach((element) => {
+            element.addEventListener("click", closeModal);
+        });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !addressModal.hidden) {
+            closeModal();
+        }
+    });
 }

@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% load static %}
 
 {% block title %}Cart · Amazone{% endblock %}
 
@@ -7,25 +6,43 @@
   <section class="page-intro">
     <p class="eyebrow">Your bag</p>
     <h1>Cart</h1>
-    <p>Sample items for the wireframe. Quantity and remove update this page in the browser only.</p>
+    <p>Your selected products and quantities</p>
   </section>
 
-  <p class="cart-empty" hidden>Your cart is empty. <a href="{% url 'home' %}">Continue shopping</a></p>
+  <p class="cart-empty" {% if cart_items %}hidden{% endif %}>Your cart is empty. <a href="{% url 'home' %}">Continue shopping</a></p>
 
-  <section class="cart-layout">
+  <section class="cart-layout" {% if not cart_items %}hidden{% endif %}>
     <div class="cart-items">
       {% for item in cart_items %}
-        <article class="cart-item" data-price="{{ item.price }}" data-qty="{{ item.quantity }}">
-          <img src="{% static item.image %}" alt="{{ item.name }}">
+        <article class="cart-item" data-price="{{ item.product.price }}" data-qty="{{ item.quantity }}">
+          {% if item.product.image_src %}
+            <img src="{{ item.product.image_src }}" alt="{{ item.product.name }}">
+          {% else %}
+            <div class="product-placeholder" role="img" aria-label="{{ item.product.name }}"></div>
+          {% endif %}
           <div>
-            <h2>{{ item.name }}</h2>
-            <p class="price">${{ item.price|floatformat:2 }}</p>
-            <div class="qty" aria-label="Quantity for {{ item.name }}">
-              <button type="button" data-qty="-1" aria-label="Decrease quantity of {{ item.name }}">−</button>
+            <h2>{{ item.product.name }}</h2>
+            <p class="price">${{ item.product.price|floatformat:2 }}</p>
+            <div class="qty" aria-label="Quantity for {{ item.product.name }}">
+              <form method="post" action="{% url 'update_cart' item.id %}">
+                {% csrf_token %}
+                <input type="hidden" name="quantity" value="{{ item.quantity|add:'-1' }}">
+                <button type="submit" class="button" data-qty="-1" aria-label="Decrease quantity of {{ item.product.name }}">-</button>
+              </form> 
               <span class="qty-value">{{ item.quantity }}</span>
-              <button type="button" data-qty="1" aria-label="Increase quantity of {{ item.name }}">+</button>
+              <form method="post" action="{% url 'update_cart' item.id %}">
+                {% csrf_token %}
+                <input type="hidden" name="quantity" value="{{ item.quantity|add:'1' }}">
+                <button type="submit" class="button" data-qty="1" aria-label="Increase quantity of {{ item.product.name }}" {% if item.quantity >= item.product.stock %}disabled{% endif %}>+</button>
+              </form>
             </div>
-            <button class="text-button" type="button" data-remove>Remove</button>
+            <form method="post" action="{% url 'remove_from_cart' item.id %}">
+              {% csrf_token %}
+              <button type="submit" class="text-button" data-remove>Remove</button>
+            </form>
+            {% if item.quantity >= item.product.stock %}
+              <small>Maximum stock reached</small>
+            {% endif %}
           </div>
           <p class="line-total">${{ item.line_total|floatformat:2 }}</p>
         </article>
@@ -37,9 +54,8 @@
       <p><span>Subtotal</span> <strong data-subtotal>${{ subtotal|floatformat:2 }}</strong></p>
       <p><span>Shipping</span> <strong>Calculated later</strong></p>
       <p class="summary-total"><span>Total</span> <strong data-total>${{ total|floatformat:2 }}</strong></p>
-      <button class="button" type="button" data-checkout>Proceed to Checkout</button>
-      <p class="checkout-notice" data-checkout-notice hidden>Checkout is not available in this phase.</p>
-      <a href="{% url 'home' %}">Continue shopping</a>
+      <a class="button" href="{% url 'checkout' %}">Proceed to Checkout</a>
+      <a class="text-button" href="{% url 'home' %}">Continue shopping</a>
     </aside>
   </section>
 {% endblock %}

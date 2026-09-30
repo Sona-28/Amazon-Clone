@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% load static %}
 
 {% block title %}Amazone{% endblock %}
 
@@ -23,18 +22,24 @@
       <h2>Featured products</h2>
       <a href="{% url 'cart' %}">View cart</a>
     </div>
-    <div class="product-grid">
-      {% for product in featured_products %}
-        <article class="product-card">
-          <img src="{% static product.image %}" alt="{{ product.name }}">
-          <p class="kicker">{{ product.category }}</p>
-          <h3>{{ product.name }}</h3>
-          <p>{{ product.blurb }}</p>
-          <p class="price">${{ product.price|floatformat:2 }}</p>
-          <a class="button button-secondary" href="{% url 'cart' %}">Add to cart</a>
-        </article>
-      {% endfor %}
-    </div>
+    {% if featured_products %}
+      <div class="product-grid">
+        {% for product in featured_products %}
+          <a class="product-card" href="{% url 'product_detail' product.slug %}">
+            {% if product.image_src %}
+              <img src="{{ product.image_src }}" alt="{{ product.name }}">
+            {% else %}
+              <div class="product-placeholder" role="img" aria-label="{{ product.name }}"></div>
+            {% endif %}
+            <p class="kicker">{{ product.category }}</p>
+            <h3 class="product-name">{{ product.name }}</h3>
+            <p class="price">${{ product.price|floatformat:2 }}</p>
+          </a>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="empty-note">No products yet.</p>
+    {% endif %}
   </section>
 
   <section class="section">
@@ -42,16 +47,23 @@
       <h2>Popular categories</h2>
       <a href="{% url 'categories' %}">See all</a>
     </div>
-    <div class="category-grid">
-      {% for category in categories %}
-        <a class="category-card tone-{{ category.tone }}" href="{% url 'categories' %}">
-          <span>{{ category.name }}</span>
-          <small>{{ category.detail }}</small>
-        </a>
-      {% endfor %}
-    </div>
+    {% if categories %}
+      <div class="category-grid">
+        {% for category in categories %}
+          <a class="category-card {% cycle 'tone-navy' 'tone-teal' 'tone-clay' 'tone-green' 'tone-gold' 'tone-rose' %}" href="{% url 'category_products' category.slug %}">
+            <span class="category-name">{{ category.name }}</span>
+            {% if category.description %}
+              <small class="category-description">{{ category.description }}</small>
+            {% endif %}
+          </a>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="empty-note">No categories yet. Add them in Django admin.</p>
+    {% endif %}
   </section>
 
+  {% if not user.is_authenticated %}
   <section class="cta">
     <div>
       <h2>Save items for later.</h2>
@@ -59,4 +71,5 @@
     </div>
     <a class="button" href="{% url 'auth' %}">Sign in or register</a>
   </section>
+  {% endif %}
 {% endblock %}

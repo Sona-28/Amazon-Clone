@@ -1,0 +1,272 @@
+{% extends "base.html" %}
+
+{% block title %}Checkout · Amazone{% endblock %}
+
+{% block content %}
+
+<section class="page-intro">
+  <p class="eyebrow">Checkout</p>
+  <h1>Complete your order</h1>
+  <p>Review your items, choose a delivery address, and place your order.</p>
+</section>
+
+<section class="cart-layout">
+
+  <div class="cart-items">
+
+    <section>
+      <h2>Your order</h2>
+
+      {% for item in cart_items %}
+        <article class="cart-item">
+
+          {% if item.product.image %}
+            <img
+              src="{{ item.product.image }}"
+              alt="{{ item.product.name }}"
+            >
+          {% else %}
+            <div
+              class="product-placeholder"
+              role="img"
+              aria-label="{{ item.product.name }}"
+            ></div>
+          {% endif %}
+
+          <div>
+            <h2>{{ item.product.name }}</h2>
+
+            <p class="price">
+              £{{ item.product.price|floatformat:2 }}
+            </p>
+
+            <p class="kicker">
+              Qty {{ item.quantity }}
+            </p>
+          </div>
+
+          <p class="line-total">
+            £{{ item.line_total|floatformat:2 }}
+          </p>
+
+        </article>
+      {% endfor %}
+    </section>
+
+
+    <section class="address-section">
+      <h2>Shipping address</h2>
+
+      {% if addresses %}
+        <div class="address-list">
+          {% for address in addresses %}
+            <div class="address-card">
+              <label class="address-option">
+                <input
+                  type="radio"
+                  name="address_id"
+                  value="{{ address.id }}"
+                  form="checkout-form"
+                  {% if default_address and default_address.id == address.id %}checked{% endif %}
+                >
+                <span>
+                  <strong>
+                    {{ address.full_name }}
+                    {% if address.is_default %}<em class="address-badge">Default</em>{% endif %}
+                  </strong>
+                  <small>
+                    {{ address.address_line_1 }}{% if address.address_line_2 %}, {{ address.address_line_2 }}{% endif %}<br>
+                    {{ address.city }}, {{ address.state }} {{ address.postal_code }}<br>
+                    {{ address.country }} · {{ address.phone }}
+                  </small>
+                </span>
+              </label>
+              {% if not address.is_default %}
+                <form method="post" action="{% url 'set_default_address' address.id %}">
+                  {% csrf_token %}
+                  <button type="submit" class="text-button">Set as default</button>
+                </form>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      {% else %}
+        <p class="form-note">You don't have any saved addresses yet.</p>
+      {% endif %}
+
+      <button type="button" class="text-button" id="open-address-modal">+ Add a new address</button>
+    </section>
+
+
+    <section class="payment-section">
+
+      <h2>Payment method</h2>
+
+      <form
+        method="post"
+        action="{% url 'checkout' %}"
+        id="checkout-form"
+      >
+
+        {% csrf_token %}
+
+        <label class="payment-option">
+
+          <input
+            type="radio"
+            name="payment_method"
+            value="cod"
+            checked
+          >
+
+          <span>
+            <strong>Cash on Delivery</strong>
+
+            <small>
+              Pay when your order is delivered.
+            </small>
+          </span>
+
+        </label>
+
+        <button
+          type="submit"
+          class="button"
+          {% if not addresses %}disabled{% endif %}
+        >
+          Place Order
+        </button>
+
+        {% if not addresses %}
+          <p class="form-note">
+            Please add a delivery address before placing your order.
+          </p>
+        {% endif %}
+
+      </form>
+
+    </section>
+
+  </div>
+
+
+  <!-- ORDER SUMMARY -->
+  <aside class="summary">
+
+    <h2>Order summary</h2>
+
+    <p>
+      <span>Subtotal</span>
+      <strong>
+        £{{ subtotal|floatformat:2 }}
+      </strong>
+    </p>
+
+    <p>
+      <span>Shipping</span>
+      <strong>Calculated later</strong>
+    </p>
+
+    <p class="summary-total">
+      <span>Total</span>
+      <strong>
+        £{{ total|floatformat:2 }}
+      </strong>
+    </p>
+
+    <a
+      class="text-button"
+      href="{% url 'cart' %}"
+    >
+      Back to cart
+    </a>
+
+  </aside>
+
+</section>
+
+<div
+  class="modal"
+  id="address-modal"
+  hidden
+  aria-hidden="true"
+>
+  <div class="modal-overlay" data-close-address-modal></div>
+
+  <div
+    class="modal-content"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="address-modal-title"
+  >
+
+    <div class="modal-header">
+
+      <div>
+        <p class="eyebrow">Delivery</p>
+        <h2 id="address-modal-title">Add new address</h2>
+      </div>
+
+      <button
+        type="button"
+        class="modal-close"
+        id="close-address-modal"
+        aria-label="Close"
+      >
+        ×
+      </button>
+
+    </div>
+
+    <form method="post" action="{% url 'add_address' %}">
+      {% csrf_token %}
+
+      <label for="full_name">Full name</label>
+      <input id="full_name" name="full_name" type="text" autocomplete="name" placeholder="Your name" required>
+
+      <label for="phone">Phone number</label>
+      <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Phone number" required>
+
+      <label for="address_line_1">Address line 1</label>
+      <input id="address_line_1" name="address_line_1" type="text" autocomplete="address-line1" placeholder="House number and street" required>
+
+      <label for="address_line_2">Address line 2</label>
+      <input id="address_line_2" name="address_line_2" type="text" autocomplete="address-line2" placeholder="Apartment, building (optional)">
+
+      <div class="form-row">
+        <div>
+          <label for="city">City</label>
+          <input id="city" name="city" type="text" autocomplete="address-level2" placeholder="City" required>
+        </div>
+        <div>
+          <label for="state">State</label>
+          <input id="state" name="state" type="text" autocomplete="address-level1" placeholder="State" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div>
+          <label for="postal_code">Postal code</label>
+          <input id="postal_code" name="postal_code" type="text" autocomplete="postal-code" placeholder="Postal code" required>
+        </div>
+        <div>
+          <label for="country">Country</label>
+          <input id="country" name="country" type="text" autocomplete="country-name" value="United Kingdom" required>
+        </div>
+      </div>
+
+      <label class="checkbox-label">
+        <input type="checkbox" name="is_default">
+        <span>Make this my default address</span>
+      </label>
+
+      <div class="modal-actions">
+        <button type="button" class="text-button" data-close-address-modal>Cancel</button>
+        <button type="submit" class="button">Save address</button>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+{% endblock %}

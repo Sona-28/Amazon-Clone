@@ -6,16 +6,22 @@
   <section class="page-intro">
     <p class="eyebrow">Browse</p>
     <h1>Categories</h1>
-    <p>Placeholder departments. Product listing pages will be added later.</p>
+    <p>Departments saved in the catalog.</p>
   </section>
   <section class="section">
-    <div class="category-grid category-grid-page">
-      {% for category in categories %}
-        <article class="category-card tone-{{ category.tone }}">
-          <span>{{ category.name }}</span>
-          <small>{{ category.detail }}</small>
-        </article>
-      {% endfor %}
-    </div>
+    {% if categories %}
+      <div class="category-grid">
+        {% for category in categories %}
+          <a class="category-card {% cycle 'tone-navy' 'tone-teal' 'tone-clay' 'tone-green' 'tone-gold' 'tone-rose' %}" href="{% url 'category_products' category.slug %}">
+            <span class="category-name">{{ category.name }}</span>
+            {% if category.description %}
+              <small class="category-description">{{ category.description }}</small>
+            {% endif %}
+          </a>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="empty-note">No categories yet. Add them in Django admin.</p>
+    {% endif %}
   </section>
 {% endblock %}

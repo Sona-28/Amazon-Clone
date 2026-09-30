@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}Order #{{ order.id }} · Amazone{% endblock %}
+
+{% block content %}
+  <section class="page-intro">
+    <p class="eyebrow"><a href="{% url 'orders' %}">Orders</a></p>
+    <h1>Order #{{ order.id }}</h1>
+    <p>Placed {{ order.created_at|date:"j M Y, H:i" }}.</p>
+  </section>
+
+  <section class="cart-layout">
+    <div class="cart-items">
+      {% for item in order_items %}
+        <article class="cart-item">
+          {% if item.product.image_src %}
+            <img src="{{ item.product.image_src }}" alt="{{ item.product.name }}">
+          {% else %}
+            <div class="product-placeholder" role="img" aria-label="{{ item.product.name }}"></div>
+          {% endif %}
+          <div>
+            <h2>{{ item.product.name }}</h2>
+            <p class="price">£{{ item.unit_price|floatformat:2 }}</p>
+            <p class="kicker">Qty {{ item.quantity }}</p>
+          </div>
+          <p class="line-total">£{{ item.line_total|floatformat:2 }}</p>
+        </article>
+      {% empty %}
+        <p class="form-note">This order has no items.</p>
+      {% endfor %}
+
+      <section class="address-section">
+        <h2>Delivery</h2>
+        <p>
+          <strong>{{ order.shipping_full_name }}</strong><br>
+          {{ order.shipping_address_line_1 }}{% if order.shipping_address_line_2 %}, {{ order.shipping_address_line_2 }}{% endif %}<br>
+          {{ order.shipping_city }}, {{ order.shipping_state }} {{ order.shipping_postal_code }}<br>
+          {{ order.shipping_country }}{% if order.shipping_phone %} · {{ order.shipping_phone }}{% endif %}
+        </p>
+      </section>
+    </div>
+
+    <aside class="summary">
+      <h2>Order summary</h2>
+      <p><span>Status</span> <strong>{{ order.get_status_display }}</strong></p>
+      <p><span>Payment</span> <strong>Cash on Delivery</strong></p>
+      <p><span>Placed</span> <strong>{{ order.created_at|date:"j M Y" }}</strong></p>
+      <p class="summary-total"><span>Total</span> <strong>£{{ order.total_price|floatformat:2 }}</strong></p>
+      <a class="text-button" href="{% url 'orders' %}">Back to orders</a>
+    </aside>
+  </section>
+{% endblock %}

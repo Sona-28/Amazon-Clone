@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Orders · Amazone{% endblock %}
+
+{% block content %}
+  <section class="page-intro">
+    <p class="eyebrow">Your account</p>
+    <h1>Orders</h1>
+    <p>Each order you have placed, with its items and total.</p>
+  </section>
+
+  {% if orders %}
+    <section class="order-list">
+      {% for order in orders %}
+        <a class="order-card" href="{% url 'order_detail' order.id %}">
+          <div class="order-card-head">
+            <div>
+              <p class="eyebrow">Order #{{ order.id }}</p>
+              <h2>{{ order.created_at|date:"j M Y, H:i" }}</h2>
+              <p class="kicker">{{ order.get_status_display }}</p>
+            </div>
+            <p class="price">£{{ order.total_price|floatformat:2 }}</p>
+          </div>
+          <ul class="order-lines">
+            {% for item in order.display_items %}
+              <li>{{ item.product.name }} · Qty {{ item.quantity }} · £{{ item.line_total|floatformat:2 }}</li>
+            {% empty %}
+              <li>No items on this order.</li>
+            {% endfor %}
+          </ul>
+          <span class="order-card-link">View order</span>
+        </a>
+      {% endfor %}
+    </section>
+  {% else %}
+    <p class="cart-empty">You have not placed any orders yet. <a href="{% url 'home' %}">Continue shopping</a></p>
+  {% endif %}
+{% endblock %}
